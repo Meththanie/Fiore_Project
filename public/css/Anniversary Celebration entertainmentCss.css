@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f3f4;
+  color: #3d2626;
+}
+
+/* Hero Section */
+.hero-section-annientersasinima {
+  background: linear-gradient(rgba(45, 25, 35, 0.65), rgba(45, 25, 35, 0.75)),
+              url('/img/anniversary background.jpeg') no-repeat center center / cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  animation: fadeInZoom 1.2s ease-out forwards;
+}
+
+.hero-content-annientersasinima  {
+  color: #fff;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content-annientersasinima h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: fadeSlideUp 1.2s ease-out forwards;
+}
+
+.hero-content-annientersasinima p {
+  font-size: 1.2rem;
+  animation: fadeSlideUp 1.4s ease-out forwards;
+}
+
+/* Section */
+.section-annientersasinima {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-annientersasinima h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #8e2a4c;
+}
+
+/* Grid */
+.entertainment-grid-annientersasinima {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card-annientersasinima {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  animation: fadeInUp 1.2s ease both;
+}
+
+.card-annientersasinima:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.card-annientersasinima img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-annientersasinima h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #6f1e3b;
+}
+
+.card-annientersasinima p {
+  font-size: 0.95rem;
+  color: #3d2626;
+}
+
+/* 💡 Tips Section */
+.tips-section-annientersasinima {
+  margin-top: 40px;
+}
+
+.tips-wrapper-annientersasinima {
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeInUp 1.4s ease both;
+}
+
+.tips-box-annientersasinima {
+  background: #fcf3f7;
+  border-left: 6px solid #c26482;
+  padding: 30px;
+  text-align: left;
+  border-radius: 12px;
+  color: #4a2c2a;
+  font-size: 1rem;
+  font-family: sans-serif;
+  line-height: 1.6;
+  list-style-type: none;
+}
+
+.tips-box-annientersasinima li {
+  margin-bottom: 12px;
+}
+
+/* 🎻 String Music Section */
+.string-container-annientersasinima {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  animation: fadeInUp 1.3s ease forwards;
+}
+
+.string-text-annientersasinima {
+  flex: 1 1 55%;
+  text-align: left;
+  animation: fadeInUp 1.5s ease;
+}
+
+.string-text-annientersasinima p {
+  font-size: 1.05rem;
+  color: #432a2a;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.string-points-annientersasinima {
+  list-style: none;
+  padding-left: 0;
+  color: #5c3b3b;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.string-points-annientersasinima li {
+  margin-bottom: 12px;
+}
+
+.string-image-annientersasinima {
+  flex: 1 1 40%;
+  animation: fadeInUp 1.6s ease;
+}
+
+.string-image-annientersasinima img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.string-image-annientersasinima img:hover {
+  transform: scale(1.03);
+}
+
+/* CTA */
+.cta-annientersasinima {
+  background: #f6dbe2;
+  padding: 50px 20px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.cta-annientersasinima h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #7e2d4f;
+  margin-bottom: 20px;
+}
+
+.cta-btn-annientersasinima {
+  background-color: #b7486f;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn-annientersasinima:hover {
+  background-color: #983857;
+}
+
+/* Animations */
+.fade-in-up-annientersasinima {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content-annientersasinima h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-annientersasinima h2 {
+    font-size: 1.8rem;
+  }
+
+  .card-annientersasinima img {
+    height: 180px;
+  }
+
+  .string-container-annientersasinima {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .string-text-annientersasinima {
+    text-align: center;
+  }
+
+  .string-image-annientersasinima {
+    width: 100%;
+  }
+}

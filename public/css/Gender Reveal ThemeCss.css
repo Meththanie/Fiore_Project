@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffaf7
+}
+
+/* Hero Section */
+.hero-sec-themes-genderrevealtheme {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.hero-sec-themes-genderrevealtheme h1 {
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #fdf3f8;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Paragraph Section */
+.Babyshower-content-genderrevealtheme {
+  padding: 60px 10%;
+  background-color: #fffaf7;
+  animation: fadeInUp 1.2s ease-out forwards;
+  opacity: 0;
+
+}
+
+.theme-para-genderrevealtheme {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Slider Section */
+.theme-slider-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fffaf7;
+}
+
+.theme-slider-section h2.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #8a57a3; /* soft lavender-violet */
+  margin-bottom: 10px;
+}
+
+.theme-slider-section p.section-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Swiper Slides */
+.swiper-slide {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.swiper-slide h3 {
+  font-size: 1.25rem;
+  color: #c167a2; /* a blend of pink and purple */
+  font-family: 'Playfair Display', serif;
+}
+
+/* Swiper Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #8a57a3;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up-genderrevealtheme {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-sec-themes-genderrevealtheme h1 {
+    font-size: 2.2rem;
+  }
+
+  .theme-slider-section h2.section-title {
+    font-size: 2rem;
+  }
+
+  .theme-slider-section p.section-subtitle {
+    font-size: 1rem;
+  }
+
+  .swiper-slide img {
+    height: 180px;
+  }
+}

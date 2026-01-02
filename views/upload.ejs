@@ -1,0 +1,61 @@
+<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0;"><br><br>
+  <section class="upload-section" style="padding: 60px 20px; max-width: 800px; margin: auto; text-align: center; background-color: #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px;">
+
+    <!-- Development Notice -->
+     
+    <div style="background-color: #fff3cd; color: #856404; padding: 15px 20px; border: 1px solid #ffeeba; border-radius: 5px; margin-bottom: 30px;">
+      <strong>Note:</strong> This AI image analysis feature is currently in development. Accuracy may be limited and results may not reflect final performance.
+    </div>
+
+    <h1 style="margin-bottom: 10px; color: #333;">Upload an Image for AI Analysis</h1>
+    <p style="color: #666; font-size: 16px;">Use this tool to get similar images based on AI analysis. Please note that this is a beta version.</p>
+
+    <!-- Image Upload Form -->
+    <form action="/analyze" method="POST" enctype="multipart/form-data" style="margin-top: 30px;">
+      <input 
+        type="file" 
+        name="image" 
+        accept="image/*" 
+        required 
+        style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"
+      >
+      <br>
+      <button 
+        type="submit" 
+        style="padding: 12px 30px; font-size: 16px; background-color: #efc311d0; color: white; border: none; border-radius: 5px; cursor: pointer;"
+      >
+        Upload and Analyze
+      </button>
+    </form>
+
+    <!-- Display AI Description -->
+    <% if (description) { %>
+      <div style="margin-top: 50px; text-align: left;">
+        <h2 style="color: #333;">AI Description:</h2>
+        <p id="description-text" style="font-size: 18px; color: #555;"><%= description %></p>
+      </div>
+    <% } %>
+
+    <!-- Display Similar Images -->
+    <% if (description) { %>
+      <div style="margin-top: 40px; text-align: left;">
+        <h3 style="color: #333;">Similar Images:</h3>
+        <div id="similar-images-grid" style="display: flex; flex-wrap: wrap; justify-content: flex-start; margin-top: 20px; gap: 15px;">
+          <!-- Similar images will be populated by upload_image.js -->
+        </div>
+      </div>
+    <% } %>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/upload.js"></script>
+
+  <script>
+    // Call the function to fetch similar images after page loads
+    <% if (description) { %>
+      window.onload = function() {
+        analyzeAndFetchSimilarImages("<%= description %>");
+      }
+    <% } %>
+  </script>
+</body>

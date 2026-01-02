@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cake & Dessert Table Ideas</title>
+  <link rel="stylesheet" href="/css/BabyShower food and drinkCss.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header class="hero-section-babefooddrink">
+    <div class="hero-content-babefooddrink">
+      <h1>Delight in Every Bite</h1>
+      <p>From custom cakes to charming candy jars — ideas to inspire your sweet table.</p>
+    </div>
+  </header>
+
+  <section class="cake-styles-babefooddrink">
+    <h2>Featured Cake Styles</h2>
+    <div class="grid-babefooddrink">
+      <div class="card-babefooddrink" data-key="teddy">
+        <img src="/img/bby shower cake.jpeg" alt="Teddy Bear Cake"/>
+        <h3>Whimsical Teddy Bear</h3>
+        <p>Perfect for baby showers or first birthdays — soft colors and plush accents.</p>
+      </div>
+      <div class="card-babefooddrink" data-key="floral">
+        <img src="/img/elegent floral1.png" alt="Floral Cake"/>
+        <h3>Elegant Florals</h3>
+        <p>Delicate sugar flowers and pastel palettes for timeless charm.</p>
+      </div>
+      <div class="card-babefooddrink" data-key="surprise">
+        <img src="/img/Heaven sent cake.jpeg" alt="Color-coded Cake"/>
+        <h3>Surprise Inside!</h3>
+        <p>Color-coded fillings reveal a surprise with every slice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📌 Detail panel BELOW cake section -->
+  <div id="card-details-babefooddrink" class="details-panel-babefooddrink hidden"></div>
+
+  <section class="table-layouts-babefooddrink">
+    <h2>Dessert Table Layout Ideas</h2>
+    <div class="layouts">
+      <div class="layout-box-babefooddrink">
+        <img src="/img/boho chic bby shower.jpeg" alt="Boho Table"/>
+        <h4>Boho Chic</h4>
+      </div>
+      <div class="layout-box-babefooddrink">
+        <img src="/img/Pastel wedding.jpeg" alt="Pastel Table"/>
+        <h4>Pastel Dreams</h4>
+      </div>
+      <div class="layout-box-babefooddrink">
+        <img src="/img/gold and glam.jpeg" alt="Glam Table"/>
+        <h4>Glam & Gold</h4>
+      </div>
+      <div class="layout-box-babefooddrink">
+        <img src="/img/woodlend table.jpeg" alt=" Woodland Adventure Table"/>
+        <h4> Woodland Adventure</h4>
+      </div>
+       <div class="layout-box-babefooddrink">
+        <img src="/img/Twinkle Twinkle Little Star.jpeg" alt="Twinkle Twinkle Little Star Table"/>
+        <h4>Twinkle Twinkle Little Star</h4>
+      </div>
+      <div class="layout-box-babefooddrink">
+        <img src="/img/Safari Baby shower.jpeg" alt="Safari Table"/>
+        <h4>Safari</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="tips-box-babefooddrink">
+    <h2>Advice from FIORE</h2>
+    <ul>
+      <li>Use cake reveals with color-coded fillings for a fun surprise.</li>
+      <li>Decorate with soft linens, frames, and themed props.</li>
+      <li>Mix candies, cookies, and cupcakes for a playful spread.</li>
+    </ul>
+  </section>
+
+  
+
+  <!-- ✅ JavaScript logic -->
+  <script>
+    const cardDetails = document.getElementById('card-details-babefooddrink');
+
+    const detailsMap = {
+      teddy: {
+        title: "Whimsical Teddy Bear",
+        content: `
+          <p>Soft, serene, and irresistibly charming — the Whimsical Teddy Bear cake is a perfect centerpiece for baby showers and first birthdays. Delicate layers of vanilla sponge are wrapped in a silky, pastel fondant, crowned by an intricately handcrafted teddy bear figurine made from sugar paste. The gentle hues and plush details evoke warmth, innocence, and celebration.</p>
+          <h4>Expert Advice from FIORE:</h4>
+          <ul>
+            <li>Pair your cake with plush stuffed bears, cloud-shaped candles, and soft organza runners.</li>
+            <li>Accent with fondant baby blocks or name initials for personalization.</li>
+            <li>Add edible pearl dust for a subtle magical shimmer.</li>
+            <li>Display on a ruffled cake stand or with faux flowers for extra charm.</li>
+          </ul>
+          <h4>Color Palette</h4>
+          <ul>
+            <li><strong>Blush Pink:</strong> #f8c8dc</li>
+            <li><strong>Creamy Vanilla:</strong> #fdf7f2</li>
+            <li><strong>Dusty Blue:</strong> #c2d8e9</li>
+            <li><strong>Misty Lavender:</strong> #d8cde3</li>
+            <li><strong>Warm Taupe:</strong> #b49f91</li>
+          </ul>
+          <div class="cake-gallery-babefooddrink">
+            <div class="cake-image-babefooddrink">
+              <img src="/img/.jpg" alt="Front View of Teddy Bear Cake">
+              <p>Front view showing delicate fondant layers and centerpiece figurine.</p>
+            </div>
+            <div class="cake-image-babefooddrink">
+              <img src="/img/teddy-bear-top.jpg" alt="Top View of Cake">
+              <p>Top view reveals detail in the bear’s face, floral accents, and textures.</p>
+            </div>
+            <div class="cake-image-babefooddrink">
+              <img src="/img/teddy-bear-scene.jpg" alt="Cake in Themed Display">
+              <p>Styled on a dessert table with pastel props and soft toys to match the theme.</p>
+            </div>
+          </div>
+        `
+      },
+      floral: {
+        title: "Elegant Florals",
+        content: "Inspired by garden weddings, this cake is adorned with edible roses and peonies in soft shades, giving it a romantic and elegant look."
+      },
+      surprise: {
+        title: "Surprise Inside!",
+        content: "The perfect gender reveal cake! White frosting hides either pink or blue layers, keeping the surprise until the first cut."
+      }
+    };
+
+    document.querySelectorAll('.card-babefooddrink').forEach(card => {
+      card.addEventListener('click', () => {
+        const key = card.getAttribute('data-key');
+        const info = detailsMap[key];
+
+        if (info) {
+          cardDetails.innerHTML = `
+            <h3>${info.title}</h3>
+            ${info.content}
+          `;
+          cardDetails.classList.remove('hidden');
+          cardDetails.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

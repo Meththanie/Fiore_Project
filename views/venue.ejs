@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Venues</title>
+  <style>
+    body {
+      font-family: 'MonterchiSerifLight';
+      margin: 0;
+      background: rgb(219, 217, 217);
+      color: black;
+    }
+
+     /* Hero Section */
+     .hero {
+        background: linear-gradient(rgba(25, 25, 112, 0.3), rgba(192, 192, 192, 0.6)),
+            url('img/birthdayvenue.jpg') no-repeat center center/cover;
+
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fffefc;
+  padding: 0 1rem;
+  animation: fadeInZoom 1s ease-out forwards;
+}
+
+    .hero h1 {
+      font-size: 3.5rem;
+      color:white;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: white;
+      margin: 1rem 0;
+      line-height: 1.5;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+     p {
+      font-size: 1.2rem;
+      color:black;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      max-width: 960px;
+      margin: 0 auto 40px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-column {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    .image-column {
+      flex: 1;
+      padding-right: 20px;
+      text-align: center;
+    }
+
+    .image-column img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    h1 {
+      color: #555;
+      margin-bottom: 15px;
+      font-size: 2em;
+    }
+
+    p {
+      color: #777;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .advice-box {
+      background-color: rgb(219, 219, 245);
+      border: 1px solid navy;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    .advice-title {
+      color: navy;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .advice-content {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .bullet-list li {
+      margin-bottom: 8px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .bullet-list li::before {
+      content: "\2713";
+      color: #4682b4;
+      font-size: 1em;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+
+    .button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color:navy; /* Luxurious gold */
+    color:white;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Birthday Venues</h1>
+      <p>Explore the best venues for your birthday celebration!</p>
+    </div><br><br>
+    
+        <p>A birthday is a beautiful reason to gather, laugh, and make memories. The right venue sets the tone for it all. Whether you envision a cozy backyard brunch, a serene beach gathering, or an unforgettable night at a rooftop or club, your choice of space becomes the canvas for your celebration. This guide brings you inspiring venue ideas tailored for every mood and moment from intimate to extravagant. Discover tips, styling ideas, and thoughtful advice to turn your party vision into reality, wherever you choose to celebrate.</p><br><br>
+     
+    
+  <!-- Backyard -->
+  <div class="container">
+    <div class="image-column">
+      <img src="img/backyardparty.jpg" alt="Backyard Party">
+    </div>
+    <div class="text-column">
+      <h1>Home or Backyard</h1>
+      <div class="advice-box">
+        <h4 class="advice-title">Advice from FIORE</h4>
+        <p class="advice-content">Planning at home or in your backyard brings warmth and flexibility. Perfect for budget-friendly, cozy celebrations.</p>
+        <ul class="bullet-list">
+          <li>Clear and decorate a main party area.</li>
+          <li>Set up shaded seating with blankets, tents, or umbrellas.</li>
+          <li>Have a separate food/drink zone.</li>
+          <li>Include lighting for evening charm.</li>
+          <li>Keep games and activities in one corner for fun flow.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Restaurant -->
+  <div class="container">
+    <div class="image-column">
+      <img src="img/cafeparty.jpg" alt="Restaurant Party">
+    </div>
+    <div class="text-column">
+      <h1>Restaurant or Cafe</h1>
+      <div class="advice-box">
+        <h4 class="advice-title">Advice from FIORE</h4>
+        <p class="advice-content">A birthday at a restaurant means less work and more fun. Focus on good food and good times with your guests.</p>
+        <ul class="bullet-list">
+          <li>Choose a cozy or stylish place with menu variety.</li>
+          <li>Reserve a private room for more privacy.</li>
+          <li>Coordinate decor or bring your own touches.</li>
+          <li>Preorder cake or check if you can bring one.</li>
+        </ul>
+      </div>
+      <a href="/cafe" class="button">Explore Restaurants & Cafes</a>
+    </div>
+  </div>
+
+  <!-- Banquet Hall -->
+  <div class="container">
+    <div class="image-column">
+      <img src="img/banquethalls.jpg" alt="Banquet Hall">
+    </div>
+    <div class="text-column">
+      <h1>Banquet Hall</h1>
+      <div class="advice-box">
+        <h4 class="advice-title">Advice from FIORE</h4>
+        <p class="advice-content">Banquet halls offer space and style—great for larger parties and extravagant themes.</p>
+        <ul class="bullet-list">
+          <li>Choose a hall that suits your theme and size.</li>
+          <li>Book early to get your ideal time.</li>
+          <li>Plan a layout for dancing, dining, and games.</li>
+          <li>Ask about packages including staff, decor, and sound.</li>
+        </ul>
+      </div>
+      <a href="/bdhotels" class="button">Explore Hotels</a>
+    </div>
+  </div>
+
+  <!-- Event Hall -->
+  <div class="container">
+    <div class="image-column">
+      <img src="img/eventhall.jpg" alt="Event Hall">
+    </div>
+    <div class="text-column">
+      <h1>Event Hall</h1>
+      <div class="advice-box">
+        <h4 class="advice-title">Advice from FIORE</h4>
+        <p class="advice-content">Event halls give you a blank canvas. Perfect for customizing every detail, from stage to seating.</p>
+        <ul class="bullet-list">
+          <li>Pick a hall with flexible decor rules.</li>
+          <li>Work with event planners for setup support.</li>
+          <li>Use lighting, props, and banners creatively.</li>
+          <li>Rent audio-visual equipment if needed.</li>
+        </ul>
+      </div>
+      <a href="/bdhotels" class="button">Explore Hotels</a>
+    </div>
+  </div>
+
+  <!-- Club -->
+  <div class="container">
+    <div class="image-column">
+      <img src="img/clubparty.jpg" alt="Club Party">
+    </div>
+    <div class="text-column">
+      <h1>Club</h1>
+      <div class="advice-box">
+        <h4 class="advice-title">Advice from FIORE</h4>
+        <p class="advice-content">A club party is energetic and vibrant—ideal for night owls and music lovers.</p>
+        <ul class="bullet-list">
+          <li>Book VIP areas for privacy and service.</li>
+          <li>Set a dress code or theme (e.g., neon, retro).</li>
+          <li>Check sound and lighting options.</li>
+          <li>Plan transportation if drinks are involved.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Beach -->
+  <div class="container">
+    <div class="image-column">
+      <img src="img/beachparty.jpg" alt="Beach Party">
+    </div>
+    <div class="text-column">
+      <h1>Beach</h1>
+      <div class="advice-box">
+        <h4 class="advice-title">Advice from FIORE</h4>
+        <p class="advice-content">Nothing beats a beach vibe for laid-back fun with sun, sand, and sea breeze.</p>
+        <ul class="bullet-list">
+          <li>Pick a clean, safe beach with space to set up.</li>
+          <li>Bring umbrellas, towels, and coolers.</li>
+          <li>Set up a simple BBQ or picnic.</li>
+          <li>Organize beach games or bonfire fun.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Park -->
+  <div class="container">
+    <div class="image-column">
+      <img src="img/parkparty.jpg" alt="Park Party">
+    </div>
+    <div class="text-column">
+      <h1>Park</h1>
+      <div class="advice-box">
+        <h4 class="advice-title">Advice from FIORE</h4>
+        <p class="advice-content">A park birthday is perfect for nature lovers and playful energy. Budget-friendly and kid-friendly!</p>
+        <ul class="bullet-list">
+          <li>Choose a park with playgrounds or picnic shelters.</li>
+          <li>Bring foldable tables, games, and a sound box.</li>
+          <li>Keep food simple and portable.</li>
+          <li>Clean up well to respect the environment.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rooftop -->
+  <div class="container">
+    <div class="image-column">
+      <img src="img/rooftopparty.jpg" alt="Rooftop Party">
+    </div>
+    <div class="text-column">
+      <h1>Rooftop</h1>
+      <div class="advice-box">
+        <h4 class="advice-title">Advice from FIORE</h4>
+        <p class="advice-content">Celebrate high above the city! Rooftop parties bring ambiance, skyline views, and cool breezes.</p>
+        <ul class="bullet-list">
+          <li>Choose a rooftop with safety and ambiance.</li>
+          <li>Decorate with lights and minimal furniture.</li>
+          <li>Plan food that’s easy to serve in open spaces.</li>
+          <li>Consider noise limits and timing rules.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f8f3;
+  color: #2d3a2b;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(255,245,235,0.5), rgba(255, 240, 225, 0.8)),
+              url('/img/dining background2.jpeg') no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  animation: fadeInZoom 1.3s ease-out both;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  color: #5a3a2e;
+  margin-bottom: 10px;
+  animation: fadeInSlideDown 1.2s ease-in-out both;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #7c5d4e;
+  animation: fadeInSlideUp 1.3s ease-in-out both;
+}
+
+
+/* General Section Styling */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #305c43; /* Forest Green */
+  margin-bottom: 30px;
+}
+
+/* Food Grid */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.food-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.food-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.food-card p {
+  padding: 15px;
+  font-size: 1rem;
+  color: #2f4033;
+}
+
+.food-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Creative Ideas Grid */
+.idea-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.idea-box {
+  background-color: #f4faf6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.idea-box h4 {
+  color: #3a694d; /* Muted green */
+}
+
+/* Tips Section */
+.tips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.tip-box {
+  background-color: #f7ede8;
+  border-left: 5px solid #a76c4c;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.tip-box h4 {
+  color: #6a402e;
+  margin-bottom: 10px;
+}
+
+.tip-box p {
+  color: #5b4032;
+  font-size: 0.95rem;
+}
+
+/* CTA */
+.cta {
+  background-color: #eaf3ed;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #2a4735;
+}
+
+.cta-btn {
+  background-color: #395f49;
+  color: #fff;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #2e4e3f;
+}
+
+/* Optional: Fade In Animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards ease;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

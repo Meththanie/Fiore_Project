@@ -1,48 +1,94 @@
-    <!-- Hero Section -->
-    <section class="hero">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- AOS Library JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2500,
+      delay: 300,
+      once: true
+    });
+  </script>
+  <!-- Hero Section -->
+  <section class="proposal-hero-newedition">
+    <div class="proposal-hero-content">
       <h1>FIORE</h1>
-      <a href="#sec-title">
-        <button class="btn">Start Planning</button>
-    </a>
+      <p>Start planning unforgettable events with elegance and style.</p>
+      <a href="#services" class="hero-link-sasmitha">START PLANNING↘</a>
+    </div>
   </section>
 
+  <!-- Intro Section -->
+  <section class="intro-section" data-aos="fade-up">
+    <p>
+      At FIORE, we transform your most cherished moments into beautifully curated experiences. From proposals to celebrations, our expert team and AI-powered tools ensure flawless planning, personalized decor, and timeless memories.
+    </p>
+  </section>
 
- <!-- Event Selection Section -->
-  <section id="eventypes" class="section">
-    <h2 id="sec-title" class="section-title">CHOOSE YOUR EVENT TYPE</h2>
-    <div class="events">
-      <div class="image-card">
-        <a href="/weddings">
-        <img src="/img/Stephanie_Jackson_Whimsical-Fairytale-Wedding_B-Captured-by-Ky-Luu_022-scaled.jpg" alt="Wedding Image">
-        <div class="event-caption">
-          <h1>Weddings</h1>
-          <p class="event-description">Your wedding is more than just an event; it’s a celebration of love and connection. With our AI-powered event planning tools, we help you craft a day that reflects your unique story. 
-            From personalized recommendations on venues to mood-setting décor and timing adjustments, 
-            our platform learns your preferences and offers tailored solutions that make planning effortless. Let us handle the details while you focus on creating unforgettable memories with your loved ones.</p>
-        </div>
-      </a>
+  <!-- Services Section -->
+  <section id="services" class="proposal-section">
+    <div class="proposal-block" data-aos="fade-right">
+      <img src="/img/WeddingDay.png" alt="Wedding Day">
+      <div>
+        <h2>Wedding Day</h2>
+        <p>Your wedding is more than an event—it’s the celebration of your love. Let us craft a day that reflects your story with personalized decor, venue recommendations, and timeline perfection.</p>
+        <a href="/weddings" class="luxury-button">Explore Weddings</a>
       </div>
-      <div class="image-card">
-        <a href="/birthday-parties">
-        <img src="/img/Stephanie_Jackson_Whimsical-Fairytale-Wedding_B-Captured-by-Ky-Luu_022-scaled.jpg" alt="Events Image">
-        <div class="event-caption">
-          <h1>Birthday Parties</h1>
-          <p class="event-description">Birthdays are about joy, surprises, and celebrating life in the best possible way. Our AI-driven approach ensures your party stands out by curating personalized experiences based on your interests and guests. 
-            Whether it’s an intimate gathering or a grand bash, we help you plan every moment – from theme suggestions to perfect party favors. 
-            Say goodbye to stress and hello to a birthday that feels truly special and effortlessly fun.</p>
-        </div>
-        </a>
+    </div>
+
+    <div class="proposal-block reverse" data-aos="fade-left">
+      <img src="/img/BirthdayParty.png" alt="Birthday Party">
+      <div>
+        <h2>Birthday Parties</h2>
+        <p>Celebrate life with joy and style. From intimate gatherings to grand bashes, our AI-driven approach curates themes, favors, and surprises that delight every guest.</p>
+        <a href="/birthday" class="luxury-button">Plan Birthday</a>
       </div>
-      <div class="image-card">
-        <a href="/other-gatherings">
-        <img src="/img/Stephanie_Jackson_Whimsical-Fairytale-Wedding_B-Captured-by-Ky-Luu_022-scaled.jpg" alt="Parties Image">
-        <div class="event-caption">
-          <h1>Other Gatherings</h1>
-          <p class="event-description">Every gathering is a chance to make meaningful memories with those you care about. Whether it’s a family reunion, 
-            a casual meetup, or a milestone event, our AI tools provide creative ideas and smart solutions to make your occasion as unique as the people attending. We offer thoughtful recommendations on venues, activities, and logistics, 
-            so you can relax and enjoy the time spent with your friends and family, knowing that everything is taken care of.</p>
-        </div>
-        </a>
+    </div>
+
+    <div class="proposal-block" data-aos="fade-right">
+      <img src="/img/OtherGatherings.png" alt="Other Gatherings">
+      <div>
+        <h2>Other Gatherings</h2>
+        <p>Whether it’s a family reunion or casual meetup, we provide creative ideas and logistics to make your gathering unique and memorable.</p>
+        <a href="/other_gathering_main_page" class="luxury-button">Discover More</a>
       </div>
+    </div>
+  </section>
+  
+
+  <section class="bento-gallery">
+    <div class="section-header-sasmitha">
+      <h2 class="bento-title">Portfolio</h2>
+      <p class="bento-decsription">A timeless collection of unforgettable moments<br>
+        Capturing love, emotion, and the beauty of each.
+      </p>
+    </div>
+    <div class="bento-symmetric-grid">
+  
+      <div class="bento-tile wide">
+        <img src="/img/G1.jpg" alt="Gallery Image 1">
+      </div>
+  
+      <div class="bento-tile">
+        <img src="/img/G2.jpg" alt="Gallery Image 2">
+      </div>
+  
+      <div class="bento-tile">
+        <img src="/img/G6.jpg" alt="Gallery Image 3">
+      </div>
+  
+      <div class="bento-tile wide">
+        <img src="/img/G4.jpg" alt="Gallery Image 4">
+      </div>
+
+  
+      <div class="bento-tile wide">
+        <img src="/img/G5.jpeg" alt="Gallery Image 5">
+      </div>
+
+      <div class="bento-tile">
+        <img src="/img/G3.jpg" alt="Gallery Image 2">
+      </div>
+
+  
     </div>
   </section>

@@ -1,0 +1,198 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffdf7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-sec-weddings {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInBackground 1.5s ease forwards;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #fdfcf8;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  color: #f7f4ec;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+.engagement-content {
+  background-color: #ffffff;
+  padding: 60px 10%;
+  animation: fadeInUp 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #9c6c49;
+  margin-bottom: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Paragraph */
+.en-para {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Item Sections */
+.engagement-item {
+  margin-bottom: 50px;
+}
+
+.engagement-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #fef9f4, #fbf4ea);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  border-left: 6px solid #d3aa75;
+}
+
+.engagement-image {
+  flex: 1 1 40%;
+  max-width: 500px;
+}
+
+.engagement-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.engagement-content {
+  flex: 1 1 60%;
+  padding: 40px 30px;
+  background-color: #fff;
+}
+
+.engagement-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #7e5a35;
+  margin-bottom: 20px;
+}
+
+.engagement-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* Advice Box */
+.engagement-advice-box {
+  background: #fff7e5;
+  padding: 20px 25px;
+  border-left: 4px solid #d1a86b;
+  border-radius: 12px;
+}
+
+.engagement-advice-box h4 {
+  color: #b18340;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.engagement-advice-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBackground {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .engagement-item-container {
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* ✅ Luxury Button Styling */
+.luxury-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background-color: #d4af37;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.luxury-button:hover {
+  background-color: #b88a00;
+  transform: translateY(-2px);
+}

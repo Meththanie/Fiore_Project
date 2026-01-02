@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Quicksand:wght@500&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fffdf9;
+  color: #3a2b22;
+}
+
+/* Hero */
+.hero-section-annisasiretgifts {
+  background: linear-gradient(rgba(255, 223, 198, 0.3), rgba(255, 239, 217, 0.6)),
+              url('/img/anniversarygift.jpeg') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fffefc;
+  animation: fadeInZoom 1s ease-out forwards;
+}
+
+.hero-content-annisasiretgifts h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: fadeSlideUp 1s ease-out forwards;
+}
+
+.hero-content-annisasiretgifts p {
+  font-size: 1.2rem;
+  animation: fadeSlideUp 1.2s ease-out forwards;
+}
+
+/* Section */
+.section-annisasiretgifts {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-annisasiretgifts h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  color: #cb6b2f;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.gift-grid-annisasiretgifts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.gift-card-annisasiretgifts {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gift-card-annisasiretgifts:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.gift-card-annisasiretgifts img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.gift-card-annisasiretgifts h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: #cb6b2f;
+}
+
+.gift-card-annisasiretgifts p {
+  font-size: 1rem;
+  color: #4a2f28;
+}
+
+/* Tips */
+.tips-box-annisasiretgifts {
+  background: #fff6ee;
+  border-left: 6px solid #f0b27a;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  list-style: none;
+  text-align: left;
+  font-size: 1rem;
+  color: #5a3a2f;
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.tips-box-annisasiretgifts li {
+  margin-bottom: 12px;
+}
+.cta-annisasiretgifts {
+  text-align: center; /* Center the content inside the section */
+}
+
+.cta-annisasiretgifts h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #3a2b22;
+}
+
+.cta-btn-annisasiretgifts {
+  background-color: #cb6b2f;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem; /* Adjusted font size for a smaller button */
+  font-weight: 500;
+  padding: 8px 20px; /* Reduced padding for a smaller button */
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block; /* Keep the button inline */
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.cta-btn-annisasiretgifts:hover {
+  background-color: #f0b27a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+}
+/* Animations */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

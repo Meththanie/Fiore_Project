@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #faf7f5;
+    color: #3b3b3b;
+  }
+  
+  .hero-thark {
+    background: url('https://cdn.notonthehighstreet.com/fs/0e/3f/19e9-fd0d-407a-8e51-245aba0552df/original_wooden-wedding-cake-topper-with-names-and-the-date.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero-title-thark {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: slideUp 1.5s ease-out;
+  }
+  
+  .hero-subtitle-thark {
+    font-size: 20px;
+    font-style: italic;
+    animation: slideUp 2s ease-out;
+  }
+  
+  .directory-section {
+    padding: 50px 40px;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .cake-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cake-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cake-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .cake-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  .cake-card p {
+    font-size: 14px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  
+  .cake-card a {
+    display: inline-block;
+    background: #a35d6a;
+    color: white;
+    padding: 8px 14px;
+    margin: 0 auto;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .cake-card a:hover {
+    background: #8c4b5a;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  

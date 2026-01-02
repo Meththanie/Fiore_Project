@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Quicksand:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f9faff;
+  color: #2c3e50;
+}
+
+/* Hero Section */
+.hero-section-anni-cameraph {
+  background: linear-gradient(rgba(51, 77, 110, 0.6), rgba(51, 77, 110, 0.8)),
+              url('/img/back3.jpeg') no-repeat center center / cover;
+  background-attachment: fixed;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  animation: fadeInZoom 1.2s ease-out forwards;
+}
+
+.hero-content-anni-cameraph {
+  color: #fff;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content-anni-cameraph h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: fadeSlideUp 1.2s ease-out forwards;
+}
+
+.hero-content-anni-cameraph p {
+  font-size: 1.2rem;
+  animation: fadeSlideUp 1.4s ease-out forwards;
+}
+
+/* Section */
+.section-anni-cameraph {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.section-anni-cameraph h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #2f5fa4;
+}
+
+/* Grid (Entertainment or Others) */
+.entertainment-grid-anni-cameraph {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card-anni-cameraph {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  animation: fadeInUp 1.2s ease both;
+}
+
+.card-anni-cameraph:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.card-anni-cameraph img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-anni-cameraph h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #375a7f;
+}
+
+.card-anni-cameraph p {
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+/* 📸 Signature Photography Styles */
+.styles-grid-anni-cameraph {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.style-card-anni-cameraph {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+.style-card-anni-cameraph:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.style-card-anni-cameraph img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.style-card-anni-cameraph img:hover {
+  transform: scale(1.03);
+}
+
+.style-card-anni-cameraph h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: #2f5fa4;
+  margin-bottom: 10px;
+}
+
+.style-card-anni-cameraph p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  color: #3c4b5c;
+}
+
+/* Tips Section */
+.tips-section-anni-cameraph {
+  margin-top: 40px;
+}
+
+.tips-box-anni-cameraph {
+  background: #ecf4ff;
+  border-left: 6px solid #7ea6db;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 800px;
+  border-radius: 12px;
+  color: #2d3e50;
+  font-size: 1rem;
+  line-height: 1.6;
+  list-style-type: none;
+  animation: fadeInUp 1.4s ease both;
+}
+
+.tips-box-anni-cameraph li {
+  margin-bottom: 12px;
+}
+
+/* CTA */
+.cta-anni-cameraph {
+  background: #d5e5fb;
+  padding: 50px 20px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.cta-anni-cameraph h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #3c5b8a;
+  margin-bottom: 20px;
+}
+
+.cta-btn-anni-cameraph {
+  background-color: #497fc1;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn-anni-cameraph:hover {
+  background-color: #3a6bb0;
+}
+
+/* Photo Grid (Masonry Style) */
+.photo-grid-anni-cameraph {
+  column-count: 3;
+  column-gap: 20px;
+  padding: 20px 0;
+}
+
+.photo-grid-anni-cameraph img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: block;
+  break-inside: avoid;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.photo-grid-anni-cameraph img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.photo-grid-anni-cameraph img:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+.photo-grid-anni-cameraph img:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .photo-grid-anni-cameraph {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-grid-anni-cameraph {
+    column-count: 1;
+  }
+
+  .hero-content-anni-cameraph h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-anni-cameraph h2 {
+    font-size: 1.8rem;
+  }
+
+  .card-anni-cameraph img {
+    height: 180px;
+  }
+
+  .style-card-anni-cameraph img {
+    height: 180px;
+  }
+}

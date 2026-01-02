@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fdf9f6;
+  color: #3a2b21;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(255,235,230,0.6), rgba(255,245,240,0.9)),
+              url('/img/cozy home.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
+  height: 35vh;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #4d2e1e;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #6b4d3a;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #4a2c1a;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #2e1c12;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #472d1f;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.grid-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.grid-card:hover {
+  transform: translateY(-6px);
+}
+
+.grid-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.grid-card p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.tips-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tip-box {
+  background-color: #fff8f4;
+  border-left: 5px solid #a77257;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.tip-box h4 {
+  color: #603c2b;
+  margin-top: 0;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

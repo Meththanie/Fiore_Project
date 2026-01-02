@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Cake Categories</title>
+  <style>
+    body {
+      font-family: 'MonterchiSerifLight';
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: rgb(219, 217, 217);
+      color: #333;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(rgba(25, 25, 112, 0.3), rgba(192, 192, 192, 0.6)),
+            url('img/birthdaycake.jpg') no-repeat center center/cover;
+
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fffefc;
+  padding: 0 1rem;
+  animation: fadeInZoom 1s ease-out forwards;
+}
+
+    .hero h1 {
+      font-size: 60px;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin: 1rem 0;
+      line-height: 1.5;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      color: white;
+    }
+    p {
+      font-size: 1.2rem;
+      color:black;
+      text-align: center;
+    }
+
+    /* Container */
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .category-section {
+      margin-bottom: 3rem;
+    }
+
+    .category-section h2 {
+      font-size: 2rem;
+      color: navy;
+      border-left: 5px solid navy;
+      padding-left: 0.75rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      padding: 1.5rem;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+
+    .card p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .center-btn {
+  text-align: center;
+}
+    .center-btn button {
+      background-color: navy;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Your Dream Birthday Cake Gallery</h1>
+    <p>Discover a wide range of delicious and beautifully designed birthday cakes for all ages. Whether you're celebrating a toddler's first birthday or a grand milestone, we've got the perfect cake for you!</p>
+  </div><br><br>
+  
+  <div class="container">
+    <p>A birthday cake isn’t just dessert. It’s the centerpiece of the celebration. From playful designs for little ones to luxurious confections for grown-ups, every cake tells a story. Whether you’re craving something classic or completely custom, find the perfect sweet creation to match the moment and wow your guests.</p><br>
+    <!-- Age Group -->
+    <section class="category-section">
+      <h2>Birthday Cakes for Toddlers & Kids</h2>
+      <p>For toddlers, keep cakes soft and sweet with gentle flavors and adorable designs, while for kids, bring their imaginations to life with bold flavors, vibrant colors, and exciting themes they’ll love to dive into!</p>
+      <div class="card-grid">
+        <div class="card">
+          <img src="img/teddy.jpg" alt="Teddy Bear Smash Cake">
+          <p>Teddy Bear Smash Cake</p>
+        </div>
+        <div class="card">
+          <img src="img/safari.jpg" alt="Animal Safari Cake">
+          <p>Animal Safari Cake</p>
+        </div>
+        <div class="card">
+          <img src="img/castle_cake.jpg" alt="Princess Castle Cake">
+          <p>Princess Castle Cake</p>
+        </div>
+        <div class="card">
+          <img src="img/superhero_cake.jpg" alt="Superhero Action Cake">
+          <p>Superhero Action Cake</p>
+        </div>
+        <div class="card">
+          <img src="img/sea_cake.jpg" alt="Under the Sea Cake">
+          <p>Under the Sea Cake</p>
+        </div>
+        <div class="card">
+          <img src="img/dinosaur_cake.jpg" alt="Dinosaur Dig Cake">
+          <p>Dinosaur Dig Cake</p>
+        </div>
+        <div class="card">
+            <img src="img/unicorn_cake.jpg" alt="Unicorn Fantasy Cake">
+            <p>Unicorn Fantasy Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/carriage_cake.jpg" alt="Carriage Cake">
+            <p>Carriage Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/space_adventure_cake.jpg" alt="Space Adventure Cake">
+            <p>Space Adventure Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/construction_cake.jpg" alt="Construction Zone Cake">
+            <p>Construction Zone Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/pirate_cake.jpg" alt="Pirate Adventure Cake">
+            <p>Pirate Adventure Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/balloon_cake.jpg" alt="Balloon Burst Cake">
+            <p> Balloon Burst Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/farmyard_cake.jpg" alt="Farmyard Fun Cake">
+            <p>Farmyard Fun Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/sports_cake.jpg" alt="Sports Champion Cake">
+            <p>Sports Champion Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/fairy_garden_cake.jpg" alt="Fairy Garden Cake">
+            <p>Fairy Garden Cake</p>
+          </div>
+      </div>
+    </section><br>
+
+
+    <section class="category-section">
+      <h2>Birthday Cakes for Teens & Adults</h2>
+      <div class="card-grid">
+        <div class="card">
+            <img src="img/vanila_cake.jpg" alt="Classic Vanilla Cake">
+            <p>Classic Vanilla Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/lava_cake.jpg" alt="Chocolate Lava Cake">
+            <p>Chocolate Lava Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/redvelvetcake.jpg" alt="Red Velvet Cake">
+            <p>Red Velvet Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/rainbow.jpg" alt=" Rainbow Cake">
+            <p> Rainbow Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/carrotcake.jpg" alt="Carrot Cake">
+            <p>Carrot Cake</p>
+          </div>
+          <div class="card">
+            <img src="img/cheesecake.jpg" alt="Cheesecake">
+            <p>Cheesecake</p>
+          </div>
+          <div class="card">
+              <img src="img/icecream_cake.jpg" alt="Ice Cream Cake">
+              <p>Ice Cream Cake</p>
+            </div>
+            <div class="card">
+              <img src="img/marblecake.jpg" alt="Marble Cake">
+              <p>Marble Cake</p>
+            </div>
+            <div class="card">
+              <img src="img/tiramisucake.jpg" alt="Tiramisu Cake">
+              <p>Tiramisu Cake</p>
+            </div>
+            <div class="card">
+              <img src="img/s’morescake.jpg" alt="S’mores Cake">
+              <p>S’mores Cake</p>
+            </div>
+            <div class="card">
+              <img src="img/donutcake.jpg" alt="Donut Cake">
+              <p>Donut Cake</p>
+            </div>
+            <div class="card">
+              <img src="img/fondantcovered_cake.jpg" alt="Fondant-Covered Cake">
+              <p>Fondant-Covered Cake</p>
+            </div>
+            <div class="card">
+              <img src="img/chocolatecake.jpg" alt="Chocolate Cake">
+              <p>Chocolate Cake</p>
+            </div>
+            <div class="card">
+              <img src="img/coconutcake.jpg" alt="Coconut Cake">
+              <p>Coconut Cake</p>
+            </div>
+            <div class="card">
+              <img src="img/lemoncake.jpg" alt="Lemon Cake">
+              <p>Lemon Cake</p>
+            </div>
+            <div class="card">
+                <img src="img/fruitcake.jpg" alt="Fruit Cake">
+                <p>Fruit Cake</p>
+              </div>
+              <div class="card">
+                <img src="img/chiffoncake.jpg" alt="Chiffon Cake">
+                <p>Chiffon Cake</p>
+              </div>
+              <div class="card">
+                <img src="img/mochacake.jpg" alt="Mocha Cake">
+                <p>Mocha Cake</p>
+              </div>
+              <div class="card">
+                <img src="img/galaxy.jpg" alt="Galaxy Cake">
+                <p>Galaxy Cake</p>
+              </div>
+              <div class="card">
+                <img src="img/buttercream.jpg" alt="Buttercream Cake">
+                <p>Buttercream Cake</p>
+              </div>
+              <div class="card">
+                <img src="img/blackforest.jpg" alt="Black Forest Cake">
+                <p>Black Forest Cake</p>
+              </div>
+              <div class="card">
+                  <img src="img/pistachiocake.jpg" alt="Pistachio Cake">
+                  <p>Pistachio Cake</p>
+                </div>
+                <div class="card">
+                  <img src="img/zebracake.jpg" alt="Zebra Cake">
+                  <p>Zebra Cake</p>
+                </div>
+                <div class="card">
+                  <img src="img/almondcake.jpg" alt="Almond Cake">
+                  <p>Almond Cake</p>
+                </div>
+                <div class="card">
+                  <img src="img/funfetticake.jpg" alt="Funfetti Cake">
+                  <p>Funfetti Cake</p>
+                </div>
+                <div class="card">
+                  <img src="img/peanutcake.jpg" alt="Peanut Butter Cake">
+                  <p>Peanut Butter Cake</p>
+                </div>
+                <div class="card">
+                  <img src="img/matchacake.jpg" alt="Matcha Cake">
+                  <p>Matcha Cake</p>
+                </div>
+                <div class="card">
+                  <img src="img/snickerscake.jpg" alt="Snickers Cake">
+                  <p>Snickers Cake</p>
+                </div>
+                <div class="card">
+                  <img src="img/maplecake.jpg" alt="Maple Pecan Cake">
+                  <p>Maple Pecan Cake</p>
+                </div>
+                <div class="card">
+                  <img src="img/cookiescake.jpg" alt="Cookies and Cream Cake">
+                  <p>Cookies and Cream Cake</p>
+                </div>
+                <div class="card">
+                    <img src="img/keylimecake.jpg" alt="Key Lime Cake">
+                    <p>Key Lime Cake</p>
+                  </div>
+                  <div class="card">
+                    <img src="img/strawberryshortcake.jpg" alt="Strawberry Shortcake">
+                    <p>Strawberry Shortcake</p>
+                  </div>
+                  <div class="card">
+                    <img src="img/churrocake.jpg" alt="Churro Cake">
+                    <p>Churro Cake</p>
+                  </div>
+                  <div class="card">
+                    <img src="img/chocolatechipcookiecake.jpg" alt="Chocolate Chip Cookie Cake">
+                    <p>Chocolate Chip Cookie Cake</p>
+                  </div>
+                  <div class="card">
+                    <img src="img/lemonblueberrycake.jpg" alt="Lemon Blueberry Cake">
+                    <p>Lemon Blueberry Cake</p>
+                  </div>
+                  <div class="card">
+                    <img src="img/coconutlimecake.jpg" alt="Coconut Lime Cake">
+                    <p>Coconut Lime Cake</p>
+                  </div>
+                  <div class="card">
+                      <img src="img/honeycake.jpg" alt="Honey Cake">
+                      <p>Honey Cake</p>
+                    </div>
+                    <div class="card">
+                      <img src="img/pistachiorosecake.jpg" alt="Pistachio Rose Cake">
+                      <p>Pistachio Rose Cake</p>
+                    </div>
+                    <div class="card">
+                      <img src="img/sweetpotatocake.jpg" alt="Sweet Potato Cake">
+                      <p>Sweet Potato Cake</p>
+                    </div>
+                    <div class="card">
+                      <img src="img/peanutbutterjellycake.jpg" alt="Peanut Butter and Jelly Cake">
+                      <p>Peanut Butter and Jelly Cake</p>
+                    </div>
+                    <div class="card">
+                      <img src="img/mintchocolate.jpg" alt="Chocolate Mint Cake">
+                      <p>Chocolate Mint Cake</p>
+                    </div>
+                    <div class="card">
+                      <img src="img/chocobanana.jpg" alt="Choco Banana Cake">
+                      <p>Choco Banana Cake</p>
+                    </div>
+                    <div class="card">
+                      <img src="img/dulcedelechecake.jpg" alt="Dulce de Leche Cake">
+                      <p>Dulce de Leche Cake</p>
+                    </div>
+                    <div class="card">
+                      <img src="img/applespice.jpg" alt="Apple Spice Cake">
+                      <p>Apple Spice Cake</p>
+                    </div>
+                    <div class="card">
+                      <img src="img/champagnecake.jpg" alt="Champagne Cake">
+                      <p>Champagne Cake</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/tarocake.jpg" alt="Taro Cake">
+                        <p>Taro Cake</p>
+                      </div>
+                      <div class="card">
+                        <img src="img/mochahazelnutcake.jpg" alt="Mocha Hazelnut Cake">
+                        <p>Mocha Hazelnut Cake</p>
+                      </div>
+                      <div class="card">
+                        <img src="img/baklavacake.jpg" alt="Baklava Cake">
+                        <p>Baklava Cake</p>
+                      </div>
+                      <div class="card">
+                        <img src="img/pinacolada.jpg" alt="Pina Colada Cake">
+                        <p>Pina Colada Cake</p>
+                      </div>
+                      <div class="card">
+                        <img src="img/macaroncake.jpg" alt="Macaron Cake">
+                        <p>Macaron Cake</p>
+                      </div>
+                      <div class="card">
+                        <img src="img/lavenderhoneycake.jpg" alt="Lavender Honey Cake">
+                        <p>Lavender Honey Cake</p>
+                      </div>
+                      <div class="card">
+                          <img src="img/chocolatestrawberrycake.jpg" alt="Chocolate Covered Strawberry Cake">
+                          <p>Chocolate Covered Strawberry Cake</p>
+                        </div>
+                        <div class="card">
+                          <img src="img/meringuecake.jpg" alt="Meringue Cake">
+                          <p>Meringue Cake</p>
+                        </div>
+                        <div class="card">
+                          <img src="img/oreocake.jpg" alt="Oreo Cake">
+                          <p>Oreo Cake</p>
+                        </div>
+                        <div class="card">
+                          <img src="img/fruitbasketcake.jpg" alt="Fruit Basket Cake">
+                          <p>Fruit Basket Cake</p>
+                        </div>
+                        <div class="card">
+                          <img src="img/roseswirlcake.jpg" alt="Rose Swirl Cake">
+                          <p>Rose Swirl Cake</p>
+                        </div>
+                        <div class="card">
+                          <img src="img/tuxedocake.jpg" alt="Tuxedo Cake">
+                          <p>Tuxedo Cake</p>
+                        </div>
+                        <div class="card">
+                          <img src="img/kitkatcake.jpg" alt="Kit Kat Cake">
+                          <p>Kit Kat Cake</p>
+                        </div>
+                        <div class="card">
+                          <img src="img/mirrorglaze.jpg" alt="Mirror Glaze Cake">
+                          <p>Mirror Glaze Cake</p>
+                        </div>
+                        <div class="card">
+                          <img src="img/biscoffcake.jpg" alt="Biscoff Cake">
+                          <p>Biscoff Cake</p>
+                        </div> 
+      </div>
+    </section>
+    <a href="cake_shop">
+      <div class="center-btn">
+        <button>Find Cakes Suppliers</button>
+      </div>
+      
+        
+  </a>
+
+  </div>
+
+
+</body>
+</html>
+

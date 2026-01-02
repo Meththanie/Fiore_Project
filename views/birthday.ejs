@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Celebration Planner</title>
+  <style>/* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'MonterchiSerifLight';
+        line-height: 1.6;
+        background: rgb(219, 217, 217);
+        color: navy;
+      }
+      
+      .hero {
+        background: linear-gradient(rgba(25, 25, 112, 0.3), rgba(192, 192, 192, 0.6)),
+            url('img/birthday.jpg') no-repeat center center/cover;
+
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fffefc;
+  padding: 0 1rem;
+  animation: fadeInZoom 1s ease-out forwards;
+}
+
+      
+      .hero h1 {
+        font-size: 60px;
+        margin-bottom: 1rem;
+        
+      }
+      
+      .hero p {
+        font-size: 1.3rem;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      
+      .category-section {
+        padding: 3rem 1rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+      
+      .category-section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: navy;
+      }
+      .category-section p {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        color:black;
+      }
+      
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+      
+      .category-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        text-align: center;
+      }
+      
+      .category-card:hover {
+        transform: scale(1.03);
+      }
+      
+      .category-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      
+      .category-card h3 {
+        font-size: 1.25rem;
+        margin: 1rem 0 0.5rem;
+        color: navy;
+      }
+      
+      .category-card p {
+        padding: 0 1rem 1.5rem;
+        font-size: 0.95rem;
+        color: black;
+      }
+      .category-link {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      
+      </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Celebrate YOU</h1>
+    <p>Celebrate every year with style, fun, and unforgettable moments!</p>
+  </header>
+
+  <section class="category-section" data-aos="fade-up">
+    <h2>Your Step-by-Step Birthday Celebration Plan</h2>
+    <p>Planning the perfect birthday party doesn’t have to be overwhelming. With a little organization and a sprinkle of creativity, you can pull off a celebration that’s fun, memorable, and totally stress-free! Whether you're throwing a bash for a child, a friend, or yourself, this guide breaks down the process into simple, manageable stages to help you plan every detail with confidence. Let’s turn your birthday vision into a beautiful reality, one step at a time!</p><br><br>
+    <div class="category-grid">
+    <a href="/deco" class="category-link">  
+      <div class="category-card">
+        <img src="img/theme.jpg" alt="Theme" />
+        <h3>Themes & Decorations</h3>
+        <p>Decorations and setup revolve around selecting a theme such as a favorite character, hobby, or color scheme and arranging matching items like balloons, banners, and table settings to create a festive, personalized atmosphere.</p>
+      </div>
+    </a>
+
+    <a href="/birthday_cake" class="category-link">
+      <div class="category-card">
+        <img src="img/cake.jpg" alt="Cake" />
+        <h3>Birthday Cake</h3>
+        <p>A birthday cake is a specially prepared and decorated dessert that serves as the centerpiece of a birthday celebration, honoring the person being celebrated and adding joy with candles, singing, and shared moments among loved ones.</p>
+      </div>
+    </a>
+
+    <a href="/food_drinks" class="category-link">
+      <div class="category-card">
+        <img src="img/food and drinks.jpg" alt="Food" />
+        <h3>Food & Drinks</h3>
+        <p>Birthday food and drinks refer to the various snacks, meals, and beverages served at a birthday celebration, often chosen to suit the tastes of the guest of honor and guests, creating a festive and enjoyable dining experience.</p>
+      </div>
+    </a>
+
+    <a href="/venue" class="category-link">
+      <div class="category-card">
+        <img src="img/venue.jpg" alt="Venues" />
+        <h3>Venues</h3>
+        <p>A birthday venue is more than a place. Because every unforgettable party begins with the perfect place. It’s the heartbeat of the celebration. Whether it’s an intimate garden gathering or a dazzling ballroom bash, the right venue sets the mood, matches the theme, fits the crowd, and turns moments into lifelong memories.</p>
+      </div>
+    </a>
+
+    <a href="/photographer_collection" class="category-link">
+      <div class="category-card">
+        <img src="img/shoot.jpg" alt="Photography" />
+        <h3>Birthday shoots and Photography</h3>
+        <p>Birthday shoots capture special moments, from candid interactions to posed group shots. Whether with a professional or DIY setup, creative backdrops, props, and lighting add flair. These photos preserve the joy, laughter, and emotions of the day, creating lasting memories of a truly special celebration.</p>
+      </div>
+    </a>
+
+    <a href="/entertainments" class="category-link">
+      <div class="category-card">
+        <img src="img/bdayactivities.jpg" alt="Entertainment" />
+        <h3>Entertainment and Activities</h3>
+        <p>Entertainment and activities are essential for a fun birthday celebration, featuring games, performances, and interactive experiences like karaoke or photo booths. These elements keep guests engaged and create unforgettable moments, tailored to the birthday person’s interests.</p>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2000,
+      once: true
+    });
+  </script>
+</body>
+</html>

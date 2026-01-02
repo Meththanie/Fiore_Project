@@ -1,0 +1,198 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffdf9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-sec-weddings-anniversasini {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInBackground 1.5s ease forwards;
+}
+
+.hero-content-anniversasini {
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-content-anniversasini h1 {
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #fffaf0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content-anniversasini p {
+  font-size: 1.4rem;
+  color: #f5e9d5;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+.engagement-content-anniversasini {
+  background-color: #ffffff;
+  padding: 60px 10%;
+  animation: fadeInUp 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+/* Section Title */
+.section-title-anniversasini {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #7b4d4d;
+  margin-bottom: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Paragraph */
+.en-para-anniversasini {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Section Items */
+.engagement-item-anniversasini {
+  margin-bottom: 50px;
+}
+
+.engagement-item-container-anniversasini {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #fef6f2, #fdf5ee);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  border-left: 6px solid #deb3b3;
+}
+
+.engagement-image-anniversasini {
+  flex: 1 1 40%;
+  max-width: 500px;
+}
+
+.engagement-image-anniversasini img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.engagement-content-anniversasini {
+  flex: 1 1 60%;
+  padding: 40px 30px;
+  background-color: #fff;
+}
+
+.engagement-content-anniversasini h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #9e6d6d;
+  margin-bottom: 20px;
+}
+
+.engagement-content-anniversasini p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* Advice Box */
+.engagement-advice-box-anniversasini {
+  background: #fff6f0;
+  padding: 20px 25px;
+  border-left: 4px solid #e2b6a6;
+  border-radius: 12px;
+}
+
+.engagement-advice-box-anniversasini h4 {
+  color: #b27373;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.engagement-advice-box-anniversasini ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBackground {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .engagement-item-container-anniversasini {
+    flex-direction: column;
+  }
+
+  .hero-content-anniversasini h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-title-anniversasini {
+    font-size: 1.8rem;
+  }
+}
+
+/* ✅ Added Button Styling */
+.luxury-button-anniversasini {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background-color: #d4af37;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.luxury-button-anniversasini:hover {
+  background-color: #a97e18;
+  transform: translateY(-2px);
+}

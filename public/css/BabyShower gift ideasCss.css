@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff9f6;
+  color: #5a3d3d;
+}
+
+.hero-section-babeshowgifts {
+  background: linear-gradient(rgba(255, 231, 240, 0.6), rgba(255, 231, 240, 0.9)),
+              url('/img/backgroundGift.jpeg') no-repeat center center/cover;
+  text-align: center;
+  padding: 80px 20px;
+  color: #9b2c7f;
+}
+
+.hero-content-babeshowgifts h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content-babeshowgifts p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #b4429a;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid-babeshowgifts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card-babeshowgifts {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-babeshowgifts img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.card-babeshowgifts h3 {
+  color: #7c2565;
+  margin-top: 15px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+}
+
+.tips-box-babeshowgifts ul {
+  background: #fff1ea;
+  border-left: 5px solid #e28db1;
+  padding: 20px;
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tips-box-babeshowgifts li {
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.cta-babeshowgifts {
+  background: #fbe7f2;
+  text-align: center;
+  padding: 40px 20px;
+  color: #702963;
+}
+
+.cta-babeshowgifts h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.cta-btn-babeshowgifts {
+  background-color: #d89db6;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-btn-babeshowgifts:hover {
+  background-color: #c06e97;
+}
+
+.fade-in-up-babeshowgifts {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-babeshowgifts img {
+    height: 180px;
+  }
+}

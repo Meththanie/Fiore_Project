@@ -1,0 +1,150 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f6f0f8; /* Light purple background */
+  color: #4b2e83; /* Darker purple text */
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(235, 220, 255, 0.7), rgba(230, 190, 255, 0.9)),
+              url('/img/housewarming background.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
+  height: 35vh;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #5e2b8e; /* Lighter purple for heading */
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #7f4fa3; /* Medium purple for text */
+  margin-bottom: 20px;
+}
+
+/* Section */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Section Title */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #6a2c8b; /* Dark purple title color */
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.grid-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.grid-card:hover {
+  transform: translateY(-6px);
+}
+
+.grid-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.grid-card p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #6a2c8b; /* Purple color for text in cards */
+}
+
+/* Tips Section */
+.tips-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tip-box {
+  background-color: #f0e6f7; /* Light purple background for tips */
+  border-left: 5px solid #9b56c1; /* Lighter purple border */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.tip-box h4 {
+  color: #5e2b8e; /* Purple color for subheadings */
+  margin-top: 0;
+}
+
+/* Call to Action */
+.cta-section {
+  text-align: center;
+}
+
+.cta-btn-wrapper p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #6a2c8b; /* Purple text for CTA section */
+}
+
+.cta-btn {
+  background-color: #9b56c1; /* Purple button */
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #7f3e9b; /* Darker purple on hover */
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

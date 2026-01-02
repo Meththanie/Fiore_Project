@@ -1,0 +1,182 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+  background-color: #fffaf7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-sec-themes {
+  background: linear-gradient(to right, #111, #333);
+  text-align: center;
+  padding: 100px 20px;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 75px;
+  font-weight: 700;
+  color: #fff8e1;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.hero-content p {
+  color: #f4f4f4;
+  background-color: #fffaf7;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.6s;
+  font-size: 20px;
+}
+
+/* Intro Paragraph Section */
+.graduation-content {
+  background-color:#fffaf7;
+  margin-top: 30px;
+  padding: 80px 10%;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.8s;
+  border-radius: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.theme-para {
+  margin-bottom: 30px;
+  color: #555;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.8;
+  
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.2rem;
+  color: #b88a00;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #777;
+  text-align: center;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+/* Swiper Slides */
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fffdf7;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  max-width: 320px;
+  height: 220px;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Slide Titles */
+.swiper-slide h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #c18f00;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #b88a00;
+}
+
+/* Fade-in Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .swiper-slide h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Button (Optional Use) */
+.graduation-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 26px;
+  background-color: #d4af37;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.graduation-button:hover {
+  background-color: #b88a00;
+  transform: translateY(-2px);
+}

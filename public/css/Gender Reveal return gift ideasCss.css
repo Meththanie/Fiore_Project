@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fffaf8;
+  color: #5a3d3d;
+}
+
+/* Hero */
+.hero-section-genderrevealretgifts {
+  background: linear-gradient(rgba(255,230,242,0.4), rgba(255,240,250,0.6)), 
+              url('/img/background1.jpeg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section-genderrevealretgifts::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(1.5px);
+}
+
+.hero-content-genderrevealretgifts {
+  position: relative;
+  z-index: 1;
+  color: #812d70;
+}
+
+.hero-content-genderrevealretgifts h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content-genderrevealretgifts p {
+  font-size: 1.2rem;
+  color: #5e3d50;
+}
+
+/* Sections */
+.section-genderrevealretgifts {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-genderrevealretgifts h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #b24292;
+}
+
+/* Swiper Slide Container */
+.swiper {
+  padding-bottom: 50px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.swiper-slide {
+  display: flex;
+  height: auto;
+}
+
+/* Swiper Slide Cards */
+.card-genderrevealretgifts {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.card-genderrevealretgifts:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.card-genderrevealretgifts img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card-genderrevealretgifts h3 {
+  font-size: 1.4rem;
+  color: #9b2c7f;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+.card-genderrevealretgifts p {
+  font-size: 1rem;
+  color: #4e2a3e;
+}
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #b24292;
+}
+
+.swiper-pagination-bullet-active {
+  background: #cf73a4;
+}
+
+/* Tips Box */
+.tips-box-genderrevealretgifts {
+  background: #fff0f7;
+  border-left: 5px solid #d68cb1;
+  padding: 40px 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+/* List Style for Tips */
+.tips-box-genderrevealretgifts ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual List Items with Animation */
+.tips-box-genderrevealretgifts li {
+  padding: 12px 0;
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 25px;
+  opacity: 0; /* Start with hidden state for animation */
+  transform: translateY(30px); /* Start position for animation */
+  animation: fadeInUp 1s forwards ease;
+}
+
+/* Animation with Staggered Delay */
+.tips-box-genderrevealretgifts li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.tips-box-genderrevealretgifts li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.tips-box-genderrevealretgifts li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.tips-box-genderrevealretgifts li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.tips-box-genderrevealretgifts li:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.tips-box-genderrevealretgifts li:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.tips-box-genderrevealretgifts li:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.tips-box-genderrevealretgifts li:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.tips-box-genderrevealretgifts li:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+.tips-box-genderrevealretgifts li::before {
+  content: "🤍";
+  position: absolute;
+  left: 0;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CTA */
+.cta-genderrevealretgifts {
+  background: linear-gradient(to right, #fbdce7, #f6d3ef);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-genderrevealretgifts h3 {
+  font-size: 1.8rem;
+  color: #702963;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.cta-btn-genderrevealretgifts {
+  background-color: #cf73a4;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.cta-btn-genderrevealretgifts:hover {
+  background-color: #b85990;
+}
+
+/* Animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards ease;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content-genderrevealretgifts h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-genderrevealretgifts h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-genderrevealretgifts h3 {
+    font-size: 1.5rem;
+  }
+}

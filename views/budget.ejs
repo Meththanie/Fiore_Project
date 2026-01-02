@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Budget Calculator</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f0f0f0, #fafafa);
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 50px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 500px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 28px;
+    }
+
+    #expenses {
+      margin-bottom: 20px;
+    }
+
+    .expense-item {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"], input[type="number"] {
+      flex: 1;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      font-size: 14px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus, input[type="number"]:focus {
+      border-color: #b88a00;
+      box-shadow: 0 0 8px rgba(126, 198, 166, 0.3);
+      outline: none;
+      background: #fff;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #dfad18, #b88a00);
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #b88a00, #dfad18);
+    }
+
+    .add-button {
+      background: none;
+      color: #b88a00;
+      border: 2px dashed #b88a00;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .add-button:hover {
+      background: #f8e6af;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #777;
+      background-color: #f0f0f0;
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ <br><br>
+  <div class="container">
+    <div class="card">
+      <h1>Enter Event Expenses</h1>
+
+      <form id="budgetForm" method="POST" action="/budget/generate-receipt">
+        <div id="expenses">
+          <div class="expense-item">
+            <input type="text" name="itemName[]" placeholder="Expense Item (e.g., Hotel)" required>
+            <input type="number" name="itemAmount[]" placeholder="Amount (Rs.)" required>
+          </div>
+        </div>
+
+        <button type="button" class="add-button" onclick="addExpense()">+ Add Another Item</button>
+
+        <button type="submit">Generate Receipt</button>
+      </form>
+    </div>
+  </div>
+
+ 
+
+  <script>
+    function addExpense() {
+      const expenseDiv = document.createElement('div');
+      expenseDiv.className = 'expense-item';
+      expenseDiv.innerHTML = `
+        <input type="text" name="itemName[]" placeholder="Expense Item (e.g., Decoration)" required>
+        <input type="number" name="itemAmount[]" placeholder="Amount (Rs.)" required>
+      `;
+      document.getElementById('expenses').appendChild(expenseDiv);
+    }
+  </script>
+
+</body>
+</html>

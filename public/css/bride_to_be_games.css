@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #fff9f5;
+    color: #3e3e3e;
+  }
+  
+  /* Hero Section */
+  .hero-bride_to_be_games {
+    background: url('https://cdn0.hitched.co.uk/article/7077/original/1280/jpg/87707-shutterstock-1666265401.jpeg') no-repeat center center/cover;
+    text-align: center;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: zoomEffect 10s infinite alternate ease-in-out;
+  }
+  
+  .hero-bride_to_be_games::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); 
+    z-index: 1;
+  }
+
+  .hero-content-bride_to_be_games {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-text-bride_to_be_games {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero-bride_to_be_games h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #b87b97;
+    letter-spacing: 1px;
+  }
+  
+  .hero-bride_to_be_games p {
+    font-size: 25px;
+    color: #7a5c61;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  @keyframes zoomEffect {
+    0% {
+      background-size: 100%;
+    }
+    100% {
+      background-size: 110%;
+    }
+  }
+  
+  /* Introduction */
+  .intro-bride_to_be_games {
+    text-align: center;
+    padding: 0 20px;
+    min-height: 30vh;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    color: #5a3e36;
+    justify-content: center;
+    font-style: italic;
+    align-items: center; 
+  }
+
+  .intro-line1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .intro-line2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  /* Game Section */
+  .games-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: #fff8f8;
+  }
+  
+  .game-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 450px;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .game-card img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+
+  .game-card h2 {
+    color: #c45a74;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .game-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .game-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  .game-card ul li::before {
+    content: "💐";
+    margin-right: 10px;
+    color: #e89cbf;
+  }
+  
+  .game-card ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }  
+  
+  @media (max-width: 600px) {
+    .hero-bride_to_be_games h1 {
+      font-size: 36px;
+    }
+  
+    .hero-bride_to_be_games p {
+      font-size: 16px;
+    }
+  }
+  

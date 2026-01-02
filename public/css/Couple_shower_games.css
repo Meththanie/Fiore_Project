@@ -1,0 +1,91 @@
+/* Couple Shower - Elegant & Romantic Style */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
+    color: #444;
+  }
+  
+  /* Hero Section */
+  .shower-hero-game {
+    background-image: url('/img/pexels-lilen-diaz-1025474869-27726876.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 173px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .shower-hero-game .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px 20px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  .shower-hero-game h1 {
+    font-size: 3rem;
+    color: #ffd1dc;
+    margin: 0;
+  }
+  
+  .shower-hero-game p {
+    font-size: 1.2rem;
+    color: #ffe9f0;
+  }
+  
+  /* Intro Section */
+  .shower-intro-game {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 50 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  /* Game Grid */
+  .shower-games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px 60px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .shower-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .shower-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .shower-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 14px 14px 0 0;
+  }
+  
+  .shower-card h3 {
+    color: #d96c6c;
+    font-size: 1.4rem;
+    margin: 16px 0 8px;
+  }
+  
+  .shower-card p {
+    padding: 0 15px;
+    color: #666;
+    font-size: 0.95rem;
+  }
+  

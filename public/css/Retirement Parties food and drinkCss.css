@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #ffffff;
+  color: #1e2a38;
+  overflow-x: hidden;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 70, 0.5)),
+              url('/img/retirement background.jpg') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  animation: slideInUp 1s ease-in-out;
+}
+
+.hero-content {
+  color: white;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Section */
+.section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #123456;
+  animation: fadeInUp 2s ease-out;
+}
+
+/* Food Grid */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: center;
+  animation: fadeInUp 2s ease-out;
+}
+
+.food-card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  animation: fadeInUp 2s ease-out;
+}
+
+.food-card img:hover {
+  transform: scale(1.03);
+}
+
+.food-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #2a2a2a;
+  animation: fadeInUp 2.5s ease-out;
+}
+
+/* Cake Grid */
+.cake-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: center;
+  animation: fadeInUp 2s ease-out;
+}
+
+.cake-card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cake-card img:hover {
+  transform: scale(1.03);
+}
+
+.cake-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #2a2a2a;
+}
+
+/* Drinks */
+.drink-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  animation: fadeInUp 2s ease-out;
+}
+
+.drink-card {
+  background-color: #f2f4f8;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  animation: fadeInUp 2s ease-out;
+}
+
+.drink-card:hover {
+  background-color: #e0e8f0;
+  transform: translateY(-5px);
+}
+
+.drink-card h3 {
+  color: #193154;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.drink-card p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Fiore Box */
+.fiore-box {
+  background-color: #f0f6ff;
+  border-left: 5px solid #3c6fa7;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto; /* Centers the box horizontally */
+  animation: fadeInUp 2.5s ease-out;
+}
+
+/* To center the content inside */
+.fiore-box h4 {
+  color: #1e3d59;
+  margin-bottom: 10px;
+  text-align: center; /* Centers the title */
+}
+
+.fiore-box ul {
+  margin: 0;
+  padding-left: 20px;
+  text-align: left; /* Aligns the list to the left */
+}
+
+.fiore-box li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeInUp 3s ease-out;
+}
+
+.cta h3 {
+  font-size: 1.8rem;
+  color: #123456;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #143a5a;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  animation: fadeInUp 3s ease-out;
+}
+
+.cta-btn:hover {
+  background-color: #0c2942;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .cta h3 {
+    font-size: 1.4rem;
+  }
+}

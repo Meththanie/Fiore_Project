@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Food & Drink</title>
+  <style>
+    body {
+      font-family: 'MonterchiSerifLight';
+      margin: 0;
+      padding: 0;
+      background: rgb(219, 217, 217);
+      color: #333;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(rgba(25, 25, 112, 0.3), rgba(192, 192, 192, 0.6)),
+            url('img/birthdayfood.jpg') no-repeat center center/cover;
+
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fffefc;
+  padding: 0 1rem;
+  animation: fadeInZoom 1s ease-out forwards;
+}
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      line-height: 1.5;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .category-section {
+      margin-bottom: 3rem;
+    }
+
+    .category-section h2 {
+      font-size: 2rem;
+      color: #ff5d8f;
+      border-left: 5px solid #ff5d8f;
+      padding-left: 0.75rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      padding: 1.5rem;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+
+    .card p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .center-btn {
+     text-align: center;
+}
+    .center-btn button {
+      background-color: navy;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+   
+  </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Delightful Food & Drinks for Every Birthday Moment</h1>
+      <p>Explore a delightful spread of birthday food and drinks crafted to please every guest. From tasty bites to refreshing sips, find the perfect flavors to elevate your celebration!</p>
+    </div>
+
+  <div class="container">
+
+    <h2>Appetizers & Snacks</h2>
+    <div class="card-grid">
+        <div class="card">
+            <img src="img/minisandwiches.jpg" alt="Mini Sandwiches">
+            <p>Mini Sandwiches</p>
+          </div>
+          <div class="card">
+            <img src="img/veggiecups.jpg" alt="Veggie Cups with Dip">
+            <p>Veggie Cups with Dip</p>
+          </div>
+          <div class="card">
+            <img src="img/popcorn.jpg" alt="Popcorn">
+            <p>Popcorn</p>
+          </div>
+          <div class="card">
+            <img src="img/mozzarellasticks.jpg" alt="Mozzarella Sticks">
+            <p>Mozzarella Sticks</p>
+          </div>
+          <div class="card">
+            <img src="img/nuggets.jpg" alt="Chicken Nuggets">
+            <p>Chicken Nuggets</p>
+          </div>
+          <div class="card">
+            <img src="img/springroll.jpg" alt="Spring Rolls">
+            <p>Spring Rolls</p>
+          </div>
+          <div class="card">
+            <img src="img/cheesecrackers.jpg" alt="Cheese Cubes & Crackers">
+            <p>Cheese Cubes & Crackers</p>
+          </div>
+          <div class="card">
+            <img src="img/deviledeggs.jpg" alt="Deviled Eggs">
+            <p>Deviled Eggs</p>
+          </div>
+          <div class="card">
+            <img src="img/sausageballs.jpg" alt="Sausage Balls">
+            <p>Sausage Balls</p>
+          </div>
+          <div class="card">
+            <img src="img/taco.jpg" alt="Crunchy Taco Cups">
+            <p>Crunchy Taco Cups</p>
+          </div>
+    </div>
+    <h2>Main Courses</h2>
+    <div class="card-grid">
+        <div class="card">
+            <img src="img/pizza.jpg" alt="Pizza">
+            <p>Pizza</p>
+          </div>
+          <div class="card">
+            <img src="img/sliders.jpg" alt="Sliders">
+            <p>Sliders</p>
+          </div>
+          <div class="card">
+            <img src="img/hotdogs.jpg" alt="Hot Dogs">
+            <p>Hot Dogs</p>
+          </div>
+          <div class="card">
+            <img src="img/corndogs.jpg" alt="Corn Dogs">
+            <p>Corn Dogs</p>
+          </div>
+          <div class="card">
+            <img src="img/pasta.jpg" alt="Pasta">
+            <p>Pasta</p>
+          </div>
+          <div class="card">
+            <img src="img/friedrice.jpg" alt="Fried Rice">
+            <p>Fried Rice</p>
+          </div>
+          <div class="card">
+            <img src="img/skewers.jpg" alt="Grilled Chicken Skewers">
+            <p>Grilled Chicken Skewers</p>
+          </div>
+          <div class="card">
+            <img src="img/veggiewraps.jpg" alt="Veggie Wraps">
+            <p>Veggie Wraps</p>
+          </div>
+          <div class="card">
+            <img src="img/bbq.jpg" alt="BBQ Chicken Wings">
+            <p>BBQ Chicken Wings</p>
+          </div>
+          <div class="card">
+            <img src="img/spaghetti.jpg" alt="Spaghetti and Meatballs">
+            <p>Spaghetti and Meatballs</p>
+          </div>
+    </div>
+
+    <h2>Desserts (Non-Cake)</h2>
+    <div class="card-grid">
+        <div class="card">
+            <img src="img/cupcakes.jpg" alt="Cupcakes">
+            <p>Cupcakes</p>
+          </div>
+          <div class="card">
+            <img src="img/icecreamcones.jpg" alt="Ice Cream Cones">
+            <p>Ice Cream Cones </p>
+          </div>
+          <div class="card">
+            <img src="img/donuts.jpg" alt="Donuts">
+            <p>Donuts</p>
+          </div>
+          <div class="card">
+            <img src="img/brownies.jpg" alt="Brownies">
+            <p>Brownies</p>
+          </div>
+          <div class="card">
+            <img src="img/churros.jpg" alt="Churros with Chocolate Sauce">
+            <p>Churros with Chocolate Sauce</p>
+          </div>
+          <div class="card">
+            <img src="img/fruitplatters.jpg" alt="Fruit Platters">
+            <p>Fruit Platters</p>
+          </div>
+          <div class="card">
+            <img src="img/waffles.jpg" alt="Waffles with Toppings">
+            <p>Waffles with Toppings</p>
+          </div>
+    </div>
+
+    <h2>Confectionery & Sweets</h2>
+    <div class="card-grid">
+        <div class="card">
+            <img src="img/chocolatetruffles.jpg" alt="Chocolate Truffles">
+            <p>Chocolate Truffles</p>
+          </div>
+          <div class="card">
+            <img src="img/gummybears.jpg" alt="Gummy Bears">
+            <p>Gummy Bears</p>
+          </div>
+          <div class="card">
+            <img src="img/poplolli.jpg" alt="Lollipops">
+            <p>Lollipops</p>
+          </div>
+          <div class="card">
+            <img src="img/marshmallowpops.jpg" alt="Marshmallow Pops">
+            <p>Marshmallow Pops</p>
+          </div>
+          <div class="card">
+            <img src="img/rockcandy.jpg" alt="Rock Candy">
+            <p>Rock Candy</p>
+          </div>
+          <div class="card">
+            <img src="img/cottoncandy.jpg" alt="Cotton Candy">
+            <p>Cotton Candy</p>
+          </div>
+          <div class="card">
+            <img src="img/candyjars.jpg" alt="Candy Jars">
+            <p>Candy Jars</p>
+          </div>
+    </div>
+
+    <h2>Drinks</h2>
+    <div class="card-grid">
+        <div class="card">
+            <img src="img/fruitpunch.jpg" alt="Fruit Punch">
+            <p>Fruit Punch</p>
+          </div>
+          <div class="card">
+            <img src="img/lemonade.jpg" alt="Lemonade">
+            <p>Lemonade</p>
+          </div>
+          <div class="card">
+            <img src="img/milkshakes.jpg" alt="Milkshakes">
+            <p>Milkshakes</p>
+          </div>
+          <div class="card">
+            <img src="img/flavoredwaterfruits.jpg" alt="Flavored Water with Fruits">
+            <p>Flavored Water with Fruits</p>
+          </div>
+          <div class="card">
+            <img src="img/icedcoffee.jpg" alt="Iced Coffee">
+            <p>Iced Coffee</p>
+          </div>
+          <div class="card">
+            <img src="img/smoothies.jpg" alt="Smoothies">
+            <p>Smoothies</p>
+          </div>
+          <div class="card">
+            <img src="img/mojito.jpg" alt="Mojito">
+            <p>Mojito</p>
+          </div> 
+    </div>
+
+  </div>
+  <a href="/catering">
+    <div class="center-btn">
+      <button>Explore Catering Options</button>
+    </div><br>
+  </a>
+</body>
+</html>

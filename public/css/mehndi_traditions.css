@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8ee;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .hero-mehtrad {
+    height: 60vh;
+    background: url('/img/hero.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e9d07e;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .hero-mehtrad h1 {
+    font-size: 3.2rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .subtext-mehtrad {
+    color: white;
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+
+  .container-mehtrad {
+    max-width: 1200px;
+    margin: 40px auto 60px;
+    padding: 0 20px;
+    
+  }
+
+  .center-paragraph-mehtrad {
+    text-align: center; 
+    margin: 20px 0; 
+    font-size: 1.2rem; 
+  }
+  
+
+  .section-mehtrad {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    margin-top: 60px;
+    border-left: 4px solid #f18d65;
+  }
+  
+  .section-mehtrad h2 {
+    color: #aa6f39;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-left: 4px solid #fceac6;
+    padding-left: 12px;
+  }
+  
+  .content-row-mehtrad {
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+    flex-wrap: wrap;
+  }
+  
+  .image-side-mehtrad {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .image-side-mehtrad img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-side-mehtrad {
+    flex: 2;
+  }
+  
+  .text-side-mehtrad p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.7;
+  }
+
+  .image-and-points-mehtrad {
+    margin-top: 38px; 
+  }
+
+  
+.point-box-mehtrad {
+    background-color: #fcf0f7;    
+    padding: 10px 20px;             
+    margin-bottom: 15px;            
+    border-radius: 8px;             
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    
+  }
+  
+  
+  .point-box-mehtrad p {
+    margin: 0;                    
+    font-size: 1rem;                
+    color: #444;                  
+    line-height: 1.5;              
+  }
+  
+  .point-box-mehtrad:hover {
+    transform: translateY(-2px);
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-mehtrad {
+      height: auto;
+      padding: 60px 20px;
+    }
+  
+    .hero-mehtrad h1 {
+      font-size: 2.2rem;
+    }
+  
+    .container-mehtrad {
+      margin-top: -30px;
+    }
+  
+    .content-row-mehtrad {
+      flex-direction: column;
+    }
+  
+    .image-side-mehtrad,
+    .text-side-mehtrad {
+      max-width: 100%;
+    }
+  }
+  

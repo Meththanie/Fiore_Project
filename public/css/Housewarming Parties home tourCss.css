@@ -1,0 +1,228 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  background-color: #f4f4f9;
+  color: #3e4a59;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(240, 248, 255, 0.5), rgba(240, 248, 255, 0.7)),
+              url('/img/home tour background.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
+  height: 40vh;
+  text-align: center;
+  background-size: cover;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.hero-content {
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #2a4d71;
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  color: #e8dcb5;
+}
+
+.cta-btn {
+  background-color: #6a9eec;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  font-family: 'Lora', serif;
+}
+
+.cta-btn:hover {
+  background-color: #4f82b2;
+}
+
+/* Section */
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+/* Section Title */
+.section-title {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4a6b8c;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.5s;
+}
+
+/* Interactive Zones Section */
+.zone-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.zone-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.2s;
+}
+
+.zone-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.zone-card p {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.6); /* Adds a semi-transparent background */
+  color: #fff; /* White text for better contrast */
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: 'Lora', serif;
+  transition: opacity 0.3s ease;
+  opacity: 0; /* Initially hidden for hover effect */
+}
+
+.zone-card:hover p {
+  opacity: 1; /* Text becomes visible when hovering over the card */
+}
+
+.zone-card:hover {
+  transform: translateY(-5px);
+}
+
+.zone-card:hover img {
+  opacity: 0.7; /* Image fades slightly when the card is hovered */
+}
+
+/* Guest Interaction Ideas Section */
+.interaction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.interaction-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.3s;
+}
+
+.interaction-card:hover {
+  transform: translateY(-5px);
+}
+
+.interaction-card h4 {
+  font-family: 'Cinzel', serif;
+  color: #6a9eec;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.interaction-card p {
+  color: #4a6b8c;
+  font-size: 1rem;
+}
+
+/* FIORE Tips Section */
+.tips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tip-box {
+  background-color: #fff;
+  border-left: 5px solid #6a9eec;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.4s;
+}
+
+.tip-box h4 {
+  color: #6a9eec;
+  margin-top: 0;
+  font-family: 'Cinzel', serif;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  transform: translateY(30px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .zone-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mini-gallery img {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .zone-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-gallery img {
+    width: 100%;
+  }
+}

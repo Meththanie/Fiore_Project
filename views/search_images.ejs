@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Event Themes</title>
+    <link rel="stylesheet" href="/css/search_images.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1545665224-0efafd7a6d0e');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        #search-form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        #search-input {
+            padding: 12px;
+            width: 60%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #efc211;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #d9ae0f;
+        }
+
+        .tag-buttons {
+            margin-top: 20px;
+        }
+
+        .tag-buttons button {
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 20px;
+            margin: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .tag-buttons button:hover {
+            background-color: #efc211;
+            color: white;
+        }
+
+        #error-message {
+            color: red;
+            margin-top: 10px;
+        }
+
+        #loading-spinner {
+            margin-top: 30px;
+        }
+
+        #images-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        #images-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        #images-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Quote */
+        .quote-section {
+            margin-top: 80px;
+            font-style: italic;
+            font-size: 20px;
+            color: #777;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 8px;
+        }
+
+        .close {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #ccc;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 80px;
+        }
+
+        @media (max-width: 600px) {
+            #search-input {
+                width: 100%;
+            }
+
+            button[type="submit"] {
+                width: 100%;
+            }
+        }
+
+        .hero {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1545665224-0efafd7a6d0e');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* black overlay with 50% opacity */
+    z-index: -1;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero Banner -->
+    <div class="hero">
+        <h1>Plan Events That Inspire</h1>
+        <p>Discover beautiful ideas and inspirations for weddings, parties, and celebrations.</p>
+    </div>
+
+    <div class="container">
+        <h2>Search anything to get an idea for your event</h2>
+
+        <!-- Search Form -->
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter a theme... (e.g., Luxury Western Wedding)" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Quick Tags -->
+        <div class="tag-buttons">
+            <button onclick="quickSearch('Indian weddings')">Indian weddings</button>
+            <button onclick="quickSearch('Wedding cakes')">Wedding cakes</button>
+            <button onclick="quickSearch('Wedding table decorations')">Wedding table decorations</button>
+            <button onclick="quickSearch('Kids birthday party')">Kids birthday party</button>
+        </div>
+
+        <div id="error-message"></div>
+
+        <!-- Spinner -->
+        <div id="loading-spinner" style="display: none;">
+            <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading..." width="80">
+        </div>
+
+        <!-- Results -->
+        <div id="images-grid"></div>
+
+        <!-- Inspirational Quote -->
+        <div class="quote-section">
+            “Great events don’t just happen — they are thoughtfully designed.”
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/search_images.js"></script>
+
+    <script>
+        function quickSearch(theme) {
+            document.getElementById('search-input').value = theme;
+            document.getElementById('search-form').dispatchEvent(new Event('submit'));
+        }
+    </script>
+</body>
+</html>

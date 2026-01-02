@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f3ef;
+    color: #4b3832;
+}
+
+.hero-thark {
+    position: relative;
+    height: 80vh;
+    background: url('https://png.pngtree.com/background/20250124/original/pngtree-gorgeous-creative-wedding-ideas-on-pinterest-picture-image_15562599.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    }
+
+.hero-thark::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;  right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.hero-content-thark {
+    position: relative;
+    color: #fff;
+    transform: translateY(-50%);
+    padding: 0 1rem;
+}
+
+.hero-title-thark {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    animation: fadeSlideIn 2s ease forwards;
+    opacity: 0;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.hero-subtitle-thark {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    animation: fadeSlideInSlow 4s ease forwards;
+    opacity: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+/* Animations */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideInSlow {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 60px 40px;
+    background-color: #f5f0eb;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #6b4c3b;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 15px;
+  }
+  
+  .visit-button {
+    display: inline-block;
+    background-color: #b88b4a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .visit-button:hover {
+    background-color: #a4773e;
+  }
+  

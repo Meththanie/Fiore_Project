@@ -1,0 +1,285 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff9f6;
+  color: #5a3d3d;
+}
+
+/* Hero Section */
+.hero-section-babefooddrink {
+  background: linear-gradient(rgba(255, 231, 240, 0.6), rgba(255, 231, 240, 0.9)),
+              url('/img/background baby shower2.jpeg') no-repeat center center/cover;
+  text-align: center;
+  padding: 80px 20px;
+  color: #9b2c7f;
+  animation: scaleIn 1s ease forwards;
+}
+
+.hero-content-babefooddrink h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content-babefooddrink p {
+  font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #b4429a;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.grid-babefooddrink {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Card Design */
+.card-babefooddrink {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.card-babefooddrink:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-babefooddrink img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.card-babefooddrink h3 {
+  color: #7c2565;
+  margin-top: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.card-babefooddrink p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Table Layouts */
+.table-layouts-babefooddrink .layouts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.layout-box-babefooddrink {
+  flex: 1 1 300px;
+  max-width: 320px;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.layout-box-babefooddrink img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.layout-box-babefooddrink h4 {
+  margin-top: 10px;
+  color: #a23d86;
+  font-size: 1.1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Tips Box */
+.tips-box-babefooddrink ul {
+  background: #fff1ea;
+  border-left: 5px solid #e28db1;
+  padding: 20px;
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+.tips-box-babefooddrink li {
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+/* Call-to-Action */
+.cta-babefooddrink {
+  background: #fbe7f2;
+  text-align: center;
+  padding: 40px 20px;
+  color: #702963;
+  animation: scaleIn 0.8s ease forwards;
+}
+
+.cta-babefooddrink h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.cta-btn-babefooddrink {
+  background-color: #d89db6;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-btn-babefooddrink:hover {
+  background-color: #c06e97;
+}
+
+/* === Animation: Fade In Up === */
+.fade-in-up-babefooddrink {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scale-in-babefooddrink {
+  animation: scaleIn 0.6s ease forwards;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+@keyframes scaleIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive for Layout Boxes */
+@media (max-width: 768px) {
+  .layout-box-babefooddrink {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .layout-box-babefooddrink img,
+  .card-babefooddrink img {
+    height: 180px;
+  }
+}
+
+/* ============================ */
+/* ✅ NEW: External Detail Panel */
+/* ============================ */
+.details-panel-babefooddrink {
+  background-color: #fff7f2;
+  border: 2px solid #f3c6dc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  color: #5a3d3d;
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+.details-panel-babefooddrink h3 {
+  font-family: 'Playfair Display', serif;
+  color: #a33f7c;
+  margin-bottom: 15px;
+}
+
+.details-panel-babefooddrink p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  margin: 0 0 20px;
+}
+
+.details-panel-babefooddrink .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.details-panel-babefooddrink .gallery img {
+  width: calc(33.333% - 10px);
+  border-radius: 10px;
+  object-fit: cover;
+  height: 160px;
+  animation: scaleIn 0.6s ease forwards;
+}
+
+.details-panel-babefooddrink .gallery figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #84496d;
+  margin-top: 5px;
+}
+
+.details-panel-babefooddrink .color-palette {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: sans-serif;
+}
+
+.color-palette-babefooddrink .swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.color-palette-babefooddrink .swatch-label {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  text-align: center;
+  color: #5a3d3d;
+}
+
+.details-panel-babefooddrink.hidden {
+  display: none;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retirement Party Themes | FIORE</title>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/Retirement Parties ThemeCss.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-sec-themes" 
+    style="background: url('/img/retirement 12.jpg') no-repeat center center; 
+           background-size: cover; 
+           position: relative;">
+    
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+                background: rgba(255, 255, 255, 0.1); 
+                backdrop-filter: blur(1.5px);"></div>
+
+    <div class="hero-content" style="position: relative; z-index: 2;">
+      <h1 class="fade-in-up">Time to Celebrate the Legacy</h1>
+    </div>
+  </section>
+
+  <!-- Intro Paragraph -->
+  <section class="graduation-content fade-in-up" style="animation-delay: 0.6s;">
+    <header>
+      <p class="theme-para">
+        Retirement is a time to reflect, rejoice, and raise a toast to a life well worked. Whether you envision a quiet evening under the stars, a fun travel-themed gathering, or a classy garden soirée, your retirement party should be as unique as your journey. Celebrate the transition with warmth, gratitude, and unforgettable memories shared with loved ones.
+      </p>
+    </header>
+  </section>
+
+  <!-- Swiper Slider Section -->
+  <section class="theme-slider-section">
+    <h2 class="section-title">Retirement Party Themes</h2>
+    <p class="section-subtitle">Create a celebration that honors a lifetime of dedication</p>
+
+    <div class="swiper graduation-theme-swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="/img/Retirement Celebration classic.jpeg" alt="Classic Celebration">
+          <h3>Classic Celebration 🎉</h3>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="/img/Garden Soirée.jpeg" alt="Garden Soiree">
+          <h3>Garden Soirée 🌿</h3>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img src="/img/Bon Voyage.jpeg" alt="Travel Theme">
+          <h3>Bon Voyage 🧳</h3>
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <img src="/img/Beach Bliss.jpeg" alt="Beach Retirement">
+          <h3>Beach Bliss 🌊</h3>
+        </div>
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <img src="/img/Vintage Retirement Party.jpeg" alt="Vintage Vibes">
+          <h3>Vintage Vibes 📸</h3>
+        </div>
+      </div>
+
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Initialization -->
+  <script>
+    const swiper = new Swiper('.graduation-theme-swiper', {
+      loop: true,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      }
+    });
+  </script>
+
+</body>
+</html>

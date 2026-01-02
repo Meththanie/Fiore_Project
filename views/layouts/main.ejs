@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= typeof title != 'undefined' ? title: 'FIORE Official Site | Crafting Your Forever - fiore.com ' %></title>
+  <link rel="stylesheet" href="/css/HomePageStyles.css">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="icon" type="image/jpeg" href="/img/favicon.jpeg" />
 
@@ -14,28 +15,55 @@
   
 
 
-    <!-- Navbar -->
-    <div class="navbar">
-      <div class="navbar-brand"></div>
-        <div class="nav-links">
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-              </svg>
-              </a>
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-              </svg>
-            </a>
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-              </svg>
-            </a>
-        </div>
-    </div> 
 
+     <!-- Navbar -->
+     <div class="navbar">
+      <div class="navbar-brand"></div>
+      <div class="nav-links">
+        <a href="#">
+         
+        </a>
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <h3>Our Services</h3>
+            <a href="/weddings">Wedding Planning</a>
+            <a href="/birthday">Birthday Party Planning</a>
+            <a href="/other_gathering_main_page">Other Gathering Planning</a>
+            <a href="/search_images">Search Images</a>
+            <a href="/upload">Upload Images</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+            <a href="/budget">Budget calculator</a>
+            <h3>About Us</h3>
+           
+            <a href="/terms">Terms & Conditions</a>
+            <h3>For Clients</h3>
+            <a href="/faq">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector('.dropdown-toggle').addEventListener('click', function (e) {
+        e.preventDefault();
+        const dropdownMenu = this.nextElementSibling;
+        dropdownMenu.classList.toggle('show');
+      });
+  
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function (e) {
+        const dropdown = document.querySelector('.dropdown');
+        if (!dropdown.contains(e.target)) {
+          document.querySelector('.dropdown-menu').classList.remove('show');
+        }
+      });
+    </script>
 
   
   
@@ -49,9 +77,121 @@
 
 <!-- Footer -->
 <footer id="footer" class="footer">
-    <p>© 2024 FIORE. All Rights Reserved.</p>
+  <h2 class="footer-title">Talk With A Specialist</h2>
+
+  <section class="contact-form-section">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+        </div>
+    </div>
+
+    <div class="service-selection">
+        <label>Select The Service</label>
+        <div class="service-buttons">
+        <button type="button" class="service-btn">Wedding Day</button>
+        <button type="button" class="service-btn">Birthday Party</button>
+        <button type="button" class="service-btn">Other Gatherings</button>
+        </div>
+    </div>
+
+    <button class="submit-button" type="submit">SUBMIT THE REQUEST</button>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("o4O8u_uz0lth6hNPL"); // Replace with your EmailJS User ID
+    })();
+
+    let selectedService = null;
+
+    // Handle service button selection
+    document.querySelectorAll('.service-buttons .service-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            document.querySelectorAll('.service-buttons .service-btn').forEach(btn => btn.classList.remove('selected'));
+            button.classList.add('selected');
+            selectedService = button.textContent;
+        });
+    });
+
+    // Handle form submission
+    document.querySelector('.submit-button').addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+
+        if (!name || !email || !selectedService) {
+            alert('Please fill in all fields and select a service.');
+            return;
+        }
+
+        const templateParams = {
+            name: name,
+            email: email,
+            service: selectedService,
+            to_email: 'fioreofficialproject@gmail.com'
+        };
+
+        emailjs.send('service_8azcx5c', 'template_vxwlals', templateParams)
+            .then(() => {
+                alert('Request submitted successfully!');
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                selectedService = null;
+                document.querySelectorAll('.service-buttons .service-btn').forEach(btn => btn.classList.remove('selected'));
+            }, (error) => {
+                alert('Failed to send request. Please try again later.');
+                console.error('EmailJS error:', error);
+            });
+    });
+</script>
+
+  <div class="footer-container">
+    <div class="footer-column">
+        <h3>ABOUT US</h3>
+        <ul>
+         
+            <li><a href="/terms">TERMS & CONDITIONS</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>OUR SERVICES</h3>
+        <ul>
+            <li><a href="/weddings">WEDDING PLANNING</a></li>
+            <li><a href="/birthday">BIRTHDAY PARTY PLANNING</a></li>
+            <li><a href="/other_gathering_main_page">OTHER GATHERING PLANNING</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>FOR CLIENTS</h3>
+        <ul>
+            <li><a href="/faq">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="footer-contact">
+        <div class="social-icons">
+            <a href="mailto:fioreofficialproject@gmail.com"><img src="/img/EmailIcon.png" alt="Email"></a>
+            <a href="#"><img src="/img/IgIcon.png" alt="X"></a>
+        </div>
+        <p><a href="http://www.fiore.com">www.fiore.com</a></p>
+        <p><a href="mailto:fioreofficialproject@gmail.com">fioreofficialproject@gmail.com</a></p>
+    </div>
+</div>
+
+
+    <p class="footer-bottom">© 2024 FIORE. All Rights Reserved.</p>
 </footer>
-  
+<script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="NTRUXAy--L-k8-YuD0-Jn";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  </script>
+
 
 </body>
 </html>

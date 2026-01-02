@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+  }
+  
+  /* Hero section with background image */
+  .hero-meth {
+    background: url('/img/pexels-olly-1050283.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 208px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-meth .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .hero-text-box-meth {
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  .hero-text-box-meth h1 {
+    margin: 0 0 10px;
+    font-size: 2.5rem;
+    color: #ffe8e8;
+  }
+  
+  .hero-text-box-meth p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #f2f2f2;
+    letter-spacing: 0.3px;
+  }  
+  
+  .hero-meth h1, .hero-meth p {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-meth h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-meth p {
+    font-size: 1.1rem;
+  }
+  
+  .page-description {
+    max-width: 900px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #444;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  .shop-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .shop-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .shop-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .shop-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .shop-card h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    color: #004d40;
+  }
+  
+  .shop-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .shop-card a {
+    text-decoration: none;
+    background: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  
+  .shop-card a:hover {
+    background: #00796b;
+  }
+  

@@ -1,0 +1,207 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff5f6;
+  color: #5a3d3d;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section-anniverfoodcele {
+  background: linear-gradient(rgba(240, 125, 125, 0.3), rgba(255, 230, 230, 0.6)),
+              url('/img/Dinner with Eiffel Tower View.jpeg') no-repeat center center / cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content-anniverfoodcele  {
+  position: relative;
+  z-index: 2;
+  color: #891d30;
+}
+
+.hero-content-anniverfoodcele  h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: fadeSlideDown 1s ease-out forwards;
+}
+
+.hero-content-anniverfoodcele  p {
+  font-size: 1.2rem;
+  color: #6d2e2e;
+  animation: fadeSlideUp 1s ease-out forwards;
+}
+
+/* Section */
+.section-anniverfoodcele  {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title-anniverfoodcele  {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  color: #a32137;
+  margin-bottom: 10px;
+}
+
+.section-subtitle-anniverfoodcele  {
+  font-size: 1.05rem;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #5a3d3d;
+}
+
+/* Timeline */
+.dining-timeline-anniverfoodcele  {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.dining-card-anniverfoodcele {
+  background: #fff;
+  padding: 25px;
+  border-left: 6px solid #a32137;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.dining-card-anniverfoodcele:hover {
+  transform: translateY(-5px);
+}
+.dining-card-anniverfoodcele img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.dining-card-anniverfoodcele h3 {
+  font-family: 'Playfair Display', serif;
+  color: #b32f48;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.dining-card-anniverfoodcele p {
+  font-size: 0.95rem;
+  color: #4f2e2e;
+}
+
+/* Cake Image Section */
+.signature-cake-anniverfoodcele {
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.signature-cake-anniverfoodcele img {
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin: 0 auto 10px;
+  display: block;
+}
+
+
+.signature-cake-anniverfoodcele figcaption {
+  font-size: 0.95rem;
+  color: #6e2a34;
+  margin-top: 10px;
+}
+
+/* CTA */
+.cta-anniverfoodcele {
+  background: #fce2e4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cta-anniverfoodcele h3 {
+  font-size: 1.6rem;
+  color: #891d30;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.cta-btn-anniverfoodcele.red {
+  background-color: #a32137;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn-anniverfoodcele.red:hover {
+  background-color: #891d30;
+}
+
+/* Animations */
+.fade-in-up-anniverfoodcele {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content-anniverfoodcele h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-title-anniverfoodcele {
+    font-size: 2rem;
+  }
+
+  .signature-cake-anniverfoodcele img {
+    height: auto;
+  }
+}

@@ -1,0 +1,228 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fdfbf8;
+  color: #3a2c1c;
+}
+
+/* Hero */
+.hero-section {
+  background: linear-gradient(rgba(80, 50, 30, 0.4), rgba(80, 50, 30, 0.7)),
+              url('/img/housewarming food background.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
+  height: 40vh;
+  text-align: center;
+}
+
+.hero-content {
+  color: #fffaf5;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #4c3427;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #2c1a12;
+}
+
+/* Section */
+.section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #5d4037;
+  margin-bottom: 40px;
+}
+
+/* Image Grid - Masonry Style */
+.image-grid {
+  column-count: 3;
+  column-gap: 15px;
+  margin-bottom: 40px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+  break-inside: avoid;
+  border-radius: 12px;
+}
+
+.grid-item img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  height: auto;
+}
+
+/* ✨ NEW: Randomized Heights for Images */
+.grid-item img {
+  min-height: 200px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Floating Label on Hover */
+.image-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(60, 40, 30, 0.7);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.grid-item:hover .image-label {
+  opacity: 1;
+}
+
+/* DIY Food & Drink Ideas */
+.idea-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.idea-box {
+  background-color: #fff7f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.idea-box:hover {
+  transform: translateY(-5px);
+}
+
+.idea-box h4 {
+  color: #5c3d2d;
+  margin-top: 0;
+}
+
+/* Tips Section */
+.tips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tip-box {
+  background-color: #fff;
+  border-left: 5px solid #8a6f52;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.tip-box h4 {
+  color: #5c3d2d;
+  margin-top: 0;
+}
+
+/* Mini Gallery */
+.mini-gallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mini-gallery img {
+  width: calc(33.333% - 10px);
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.mini-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* CTA */
+.cta {
+  background-color: #efe8e2;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  color: #4a3324;
+  margin-bottom: 20px;
+}
+
+/* Animation */
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  transform: translateY(30px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .image-grid {
+    column-count: 2;
+  }
+
+  .mini-gallery img {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    column-count: 1;
+  }
+
+  .mini-gallery img {
+    width: 100%;
+  }
+}

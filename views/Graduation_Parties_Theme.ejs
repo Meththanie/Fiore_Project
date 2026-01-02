@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Graduation Party Themes | FIORE</title>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/Graduation Parties ThemeCss.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-sec-themes" 
+    style="background: url('/img/graduationTheme1.jpg') no-repeat center center; 
+           background-size: cover; 
+           position: relative;">
+    
+    <!-- Very Subtle Blurred Background Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+                background: rgba(255, 255, 255, 0.1); 
+                backdrop-filter: blur(1.5px);"></div>
+
+    <div class="hero-content" style="position: relative; z-index: 2;">
+      <h1 class="fade-in-up">Celebrate in Style</h1>
+    </div>
+  </section>
+
+  <!-- Intro Paragraph -->
+  <section class="graduation-content fade-in-up" style="animation-delay: 0.6s;">
+    <header>
+      <p class="theme-para">
+        Graduation is more than a milestone—it's a moment to shine. Whether you're dreaming of a sleek black and gold soirée, a casual backyard bash, or a photo-worthy retro setup, your party should reflect your personality and journey. From bold color palettes to playful elements, create an unforgettable celebration that honors your hard work and bright future. Let your graduation theme speak volumes about who you are and where you're headed next.
+      </p>
+    </header>
+  </section>
+
+  <!-- Swiper Slider Section -->
+  <section class="theme-slider-section">
+    <h2 class="section-title">Graduation Party Themes</h2>
+    <p class="section-subtitle">Choose a theme that matches your vibe and celebrates your achievement</p>
+
+    <div class="swiper graduation-theme-swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="/img/graduationBlack and white.jpeg" alt="Classic Black & Gold">
+          <h3>Classic Black & Gold 🎓</h3>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="/img/Backyard Bash.jpeg" alt="Backyard Bash">
+          <h3>Backyard Bash 🌿</h3>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img src="/img/Retro vibe.jpeg" alt="Retro Vibes">
+          <h3>Retro Vibes 📸</h3>
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <img src="/img/boho chic.jpeg" alt="Boho Chic Graduation">
+          <h3>Boho Chic 🎉</h3>
+        </div>
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <img src="/img/campus night.jpg" alt="Campus Nights">
+          <h3>Campus Nights ✨</h3>
+        </div>
+      </div>
+
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Initialization -->
+  <script>
+    const swiper = new Swiper('.graduation-theme-swiper', {
+      loop: true,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      }
+    });
+  </script>
+
+</body>
+</html>

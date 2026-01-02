@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff5f6;
+  color: #5a3d3d;
+}
+
+/* Hero */
+.hero-section-ani-celebration-vens {
+  background: linear-gradient(rgba(255,210,220,0.5), rgba(255,220,230,0.7)), 
+              url('/img/map.jpeg') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section-ani-celebration-vens::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,240,245,0.4);
+  backdrop-filter: blur(1.5px);
+}
+
+.hero-content-ani-celebration-vens {
+  position: relative;
+  z-index: 1;
+  color: #a02555;
+}
+
+/* ✨ Animated Hero Title & Subtitle */
+.hero-content-ani-celebration-vens h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: slideFadeIn 1.2s ease-out forwards;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.hero-content-ani-celebration-vens p {
+  font-size: 1.2rem;
+  color: #82334f;
+  animation: slideFadeIn 1.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.section-ani-celebration-vens {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-ani-celebration-vens h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #c94e76;
+}
+
+.story-cards-ani-celebration-vens, .venue-cards-ani-celebration-vens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.card-ani-celebration-vens {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.card-ani-celebration-vens:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.card-ani-celebration-vens img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card-ani-celebration-vens h3 {
+  font-size: 1.4rem;
+  color: #b93e6a;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+.card-ani-celebration-vens p {
+  font-size: 1rem;
+  color: #6b2a3e;
+}
+
+/* ✅ UPDATED: Venue Gallery */
+.gallery-ani-celebration-vens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.venue-card-ani-celebration-vens {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.venue-card-ani-celebration-vens:hover {
+  transform: translateY(-5px);
+}
+
+.venue-card-ani-celebration-vens img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.venue-card-ani-celebration-vens h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #b93e6a;
+  margin-bottom: 10px;
+}
+
+.venue-card-ani-celebration-vens p {
+  font-size: 0.95rem;
+  color: #5a3d3d;
+}
+
+/* CTA */
+.cta-ani-celebration-vens {
+  background: linear-gradient(to right, #fad1dc, #f8c1ce);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-ani-celebration-vens h3 {
+  font-size: 1.8rem;
+  color: #922d4c;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.cta-btn-ani-celebration-vens {
+  background-color: #d95c84;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.cta-btn-ani-celebration-vens:hover {
+  background-color: #c24972;
+}
+
+/* Fade Animation */
+.fade-in-up-ani-celebration-vens {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards ease;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✨ Unique Animation for Hero Heading */
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======================== */
+/* ✨ NEW: Venue Guide Grid */
+/* ======================== */
+.venue-guide-ani-celebration-vens h2 {
+  color: #b93e6a;
+}
+
+.guide-grid-ani-celebration-vens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.guide-card-ani-celebration-vens {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.guide-card-ani-celebration-vens:hover {
+  transform: translateY(-5px);
+}
+
+.guide-card-ani-celebration-vens img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.guide-card-ani-celebration-vens h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #8a2e55;
+  margin-bottom: 10px;
+}
+
+.guide-card-ani-celebration-vens p {
+  font-size: 0.95rem;
+  color: #5a3d3d;
+}
+
+/* 🎯 Budget Section Styling */
+.budget-section-ani-celebration-vens h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #c94e76;
+  margin-bottom: 40px;
+}
+
+.budget-grid-ani-celebration-vens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.budget-card-ani-celebration-vens {
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  text-align: center;
+  animation: fadeInUp 1s ease both;
+}
+
+.budget-card-ani-celebration-vens:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.budget-card-ani-celebration-vens h3 {
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  color: #a83f61;
+  margin-bottom: 10px;
+}
+
+.budget-card-ani-celebration-vens p {
+  font-size: 1rem;
+  color: #5a3d3d;
+  line-height: 1.6;
+}
+
+/* Optional: Color accents */
+.budget-card-ani-celebration-vens.low h3 {
+  color: #679f51;
+}
+
+.budget-card-ani-celebration-vens.mid h3 {
+  color: #b57445;
+}
+
+.budget-card-ani-celebration-vens.high h3 {
+  color: #a63f7e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content-ani-celebration-vens h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-ani-celebration-vens h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-ani-celebration-vens h3 {
+    font-size: 1
+  }
+}
