@@ -49,7 +49,10 @@ FIORE is an innovative web application that leverages artificial intelligence to
    Run the following command to start the application:  
    ```bash  
    npm start  
-   ```  
+   ```
+
+   Fiore Project Shared Folder(Google Drive) 
+   Link: https://drive.google.com/drive/folders/12QFTBVT2WRMjoeQyDUMU5j11XPm6qgEO?usp=share_link
 
 6. **Access the Application**  
    Open your web browser and go to:  
